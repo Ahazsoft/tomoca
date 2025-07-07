@@ -14,7 +14,7 @@ import { ArrowNext, ArrowPrev, Cosmetics, Meckoup, VeganProduct } from "@/svg";
 
 // slider setting
 
-const videoURL = "/assets/img/slider/3/test-video.mp4"; 
+const videoURL = "https://www.dropbox.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4&st=8nl7alko&dl=0"; 
 
 const slider_setting = {
   slidesPerView: 1,
@@ -41,7 +41,7 @@ const slider_data = [
   // },
   {
     id: 1,
-    bg: { src: "/assets/img/slider/3/test-video.mp4", type: "video" },
+    bg: { src: "https://www.dropbox.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4&st=8nl7alko&dl=0", type: "video" },
     subtitle: "Winter Collection 2023",
     title: "Be your kind of beauty",
   },
