@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'Anton';
+  src: url('/assets/fonts/Anton-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Public Sans';
+  src: url('/assets/fonts/PublicSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body, .custom-body-font {
+  font-family: 'Anton', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6, .custom-heading-font {
+  font-family: 'PublicSans', sans-serif !important;
+}
