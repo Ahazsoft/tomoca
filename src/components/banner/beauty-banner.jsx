@@ -14,7 +14,7 @@ import { ArrowNext, ArrowPrev, Cosmetics, Meckoup, VeganProduct } from "@/svg";
 
 // slider setting
 
-const videoURL = "/assets/img/slider/3/slider-2.mp4"; 
+const videoURL = "public/assets/img/slider/3/slider-2.mp4"; 
 
 const slider_setting = {
   slidesPerView: 1,
@@ -41,7 +41,7 @@ const slider_data = [
   // },
   {
     id: 1,
-    bg: { src: "/assets/img/slider/3/slider-2.mp4", type: "video" },
+    bg: { src: "public/assets/img/slider/3/slider-2.mp4", type: "video" },
     subtitle: "Winter Collection 2023",
     title: "Be your kind of beauty",
   },
