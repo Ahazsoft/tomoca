@@ -1,21 +1,16 @@
 'use client';
 import React from "react";
-import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Pagination } from "swiper/modules";
-// internal
-// import slider_bg_1 from "@assets/img/slider/3/slider-1.jpg";
-// import slider_video_1 from "@assets/img/slider/3/slider-1.mp4";
 
-// import slider_bg_1 from "@assets/img/slider/3/slider-1.jpg";
+// Import images
 import slider_bg_2 from "@assets/img/slider/3/slider-2.jpg";
 import slider_bg_3 from "@assets/img/slider/3/slider-3.jpg";
-import { ArrowNext, ArrowPrev, Cosmetics, Meckoup, VeganProduct } from "@/svg";
 
-// slider setting
+// Direct Dropbox link for video
+const videoURL = "https://dl.dropboxusercontent.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4";
 
-const videoURL = "https://www.dropbox.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4&st=8nl7alko&dl=0"; 
-
+// Slider settings
 const slider_setting = {
   slidesPerView: 1,
   spaceBetween: 30,
@@ -31,26 +26,14 @@ const slider_setting = {
   },
 };
 
-// slider data
+// Slider data
 const slider_data = [
-  // {
-  //   id: 1,
-  //   bg: { src: slider_video_1, type: "video" }, // you can use `type` to differentiate
-  //   subtitle: "Winter Collection 2023",
-  //   title: "Be your kind of beauty",
-  // },
   {
     id: 1,
-    bg: { src: "https://www.dropbox.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4&st=8nl7alko&dl=0", type: "video" },
+    bg: { src: videoURL, type: "video" },
     subtitle: "Winter Collection 2023",
     title: "Be your kind of beauty",
   },
-  // {
-  //   id: 1,
-  //   bg: slider_bg_1,
-  //   subtitle: "Top Brand Collection",
-  //   title: "Use the best for you.",
-  // },
   {
     id: 2,
     bg: slider_bg_2,
@@ -65,105 +48,72 @@ const slider_data = [
   },
 ];
 
-// feature item 
-function FeatureItem({ icon, title }) {
-  return (
-    <div className="tp-slider-feature-item-3 d-flex mb-30">
-      <div className="tp-slider-feature-icon-3">
-        <span>
-          {icon}
-        </span>
-      </div>
-      <div className="tp-slider-feature-content-3">
-        <h3 className="tp-slider-feature-title-3">
-          {title}
-        </h3>
-      </div>
-    </div>
-  )
-}
-
 const BeautyBanner = () => {
   return (
-    <>
-      <section className="tp-slider-area p-relative z-index-1">
-        <Swiper
-          {...slider_setting}
-          modules={[Navigation, EffectFade, Pagination]}
-          className="tp-slider-active-3 swiper-container"
-        >
-          {slider_data.map((item) => (
-            <SwiperSlide
-              key={item.id}
-              className="tp-slider-item-3 tp-slider-height-3 p-relative black-bg d-flex align-items-center"
-            >
-              {/* <div
-                className="tp-slider-thumb-3 include-bg"
-                style={{ backgroundImage: `url(${item.bg.src})` }}
-              ></div> */}
-              <div className="tp-slider-thumb-3 include-bg">
-                {item.bg.type === "video" ? (
-                  <div className="tp-slider-video-wrapper">
-                    <video
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                      className="tp-slider-video"
-                    >
-                      <source src={item.bg.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                ) : (
-                  <div
-                    className="tp-slider-thumb-3 include-bg"
-                    style={{ backgroundImage: `url(${item.bg.src})` }}
-                  ></div>
-                )}
-              </div>
+    <section className="tp-slider-area p-relative z-index-1">
+      <Swiper
+        {...slider_setting}
+        modules={[Navigation, EffectFade, Pagination]}
+        className="tp-slider-active-3 swiper-container"
+      >
+        {slider_data.map((item) => (
+          <SwiperSlide
+            key={item.id}
+            className="tp-slider-item-3 tp-slider-height-3 p-relative black-bg d-flex align-items-center"
+          >
+            <div className="tp-slider-thumb-3 include-bg">
+              {item.bg.type === "video" ? (
+                <div className="tp-slider-video-wrapper">
+                  <video
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    className="tp-slider-video"
+                  >
+                    <source src={item.bg.src} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              ) : (
+                <div
+                  className="tp-slider-thumb-3 include-bg"
+                  style={{ backgroundImage: `url(${item.bg.src})` }}
+                ></div>
+              )}
+            </div>
 
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-xl-6 col-lg-6 col-md-8">
+                  <div className="tp-slider-content-3">
+                    <h3 className="tp-slider-title-3">
+                      Celebrating Ethiopian Coffee
+                    </h3>
+                    <span>Since 1953</span>
 
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-xl-6 col-lg-6 col-md-8">
-                    <div className="tp-slider-content-3">
-                      <h3 className="tp-slider-title-3">
-                        Celebrating Ethiopian Coffee
-                      </h3>
-                      <span>Since 1953</span>
-
-                      <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
-                        {/* <FeatureItem icon={<Cosmetics />} title={<>High-end <br /> Cosmetics</>} /> */}
-                        {/* <FeatureItem icon={<VeganProduct />} title={<>Vegan <br /> Product</>} /> */}
-                        {/* <FeatureItem icon={<Meckoup />} title={<>Express <br /> Make-up</>} /> */}
-                      </div>
-                      {/* <div className="tp-slider-btn-3">
-                        <Link
-                          href="/shop"
-                          className="tp-btn tp-btn-border tp-btn-border-white"
-                        >
-                          Discover Now
-                        </Link>
-                      </div> */}
+                    <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
+                      {/* Feature items can go here */}
                     </div>
+                    {/* Optional Button */}
+                    {/* <div className="tp-slider-btn-3">
+                      <Link href="/shop" className="tp-btn tp-btn-border tp-btn-border-white">
+                        Discover Now
+                      </Link>
+                    </div> */}
                   </div>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-          <div className="tp-swiper-dot tp-slider-3-dot d-sm-none"></div>
-          <div className="tp-slider-arrow-3 d-none d-sm-block">
-            <button type="button" className="tp-slider-3-button-prev">
-              {/* <ArrowPrev /> */}
-            </button>
-            <button type="button" className="tp-slider-3-button-next">
-              {/* <ArrowNext /> */}
-            </button>
-          </div>
-        </Swiper>
-      </section>
-    </>
+            </div>
+          </SwiperSlide>
+        ))}
+        <div className="tp-swiper-dot tp-slider-3-dot d-sm-none"></div>
+        <div className="tp-slider-arrow-3 d-none d-sm-block">
+          <button type="button" className="tp-slider-3-button-prev"></button>
+          <button type="button" className="tp-slider-3-button-next"></button>
+        </div>
+      </Swiper>
+    </section>
   );
 };
 
