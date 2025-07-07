@@ -1,0 +1,605 @@
+@use '../utils' as *;
+/*---------------------------------
+    1.2 Common Classes
+---------------------------------*/
+
+.w-img{
+	& img{
+		width: 100%;
+	}
+}
+
+.m-img{
+	& img{
+		max-width: 100%;
+	}
+}
+
+.fix {
+    overflow:hidden
+}
+.clear{
+    clear: both;
+}
+
+.z-index-1{
+	z-index: 1;
+}
+
+.z-index-11{
+	z-index: 11;
+}
+
+.overflow-y-visible{
+	overflow-x: hidden;
+	overflow-y: visible;
+}
+
+.p-relative{
+	position: relative;
+}
+.p-absolute{
+	position: absolute;
+}
+
+.include-bg{
+	@include background();
+}
+
+.tp-slider-video-wrapper {
+  position: relative;
+  width: 100%;
+  height: 150%;
+  overflow: hidden;
+}
+
+.col-xl-6 {
+    flex: 0 0 auto;
+    width: 100%;
+}
+.tp-slider-title-3 {
+  font-weight: 400;
+  font-size: 80px !important;
+  line-height: 1.06;
+  margin: 0 auto 22px; /* top auto bottom */
+  color: var(--tp-common-white);
+  animation-delay: 0.3s;
+  animation-duration: 1s;
+  text-align: center; /* good idea to include */
+  display: block; /* if not already */
+}
+
+.tp-slider-content-3 > span {
+  font-family: var(--tp-ff-charm);
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--tp-common-white);
+  display: inline-block;
+  animation-delay: 0.1s;
+  animation-duration: 1s;
+  margin-bottom: 8px;
+  margin: 0 auto 22px !important; /* top auto bottom */
+  text-align: center !important; /* good idea to include */
+  display: block !important; /* if not already */
+}
+
+.logo-light {
+    display: block; /* in case it was hidden before */
+    width: 10%;   /* adjust as needed */
+    height: auto;
+	// margin-top: 10%; /* adjust this value to move it more or less */
+	margin: 0% auto 0 auto; /* top margin 10%, auto left and right to center */
+
+}
+
+.logo-dark {
+    display: block; /* in case it was hidden before */
+    width: 10%;   /* adjust as needed */
+    height: auto;
+	// margin-top: 10%; /* adjust this value to move it more or less */
+	margin: 0% auto 0 auto; /* top margin 10%, auto left and right to center */
+
+}
+
+
+// Events
+
+.tp-locate-store-title {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #222; /* or your theme color */
+  margin: 0;
+}
+
+.tp-section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tp-event-box {
+  background-color: #f9f9f9;
+  min-height: 250px; /* Adjust height as needed */
+}
+
+.tp-event-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.tp-event-date,
+.tp-event-place {
+  font-size: 16px;
+  color: #444;
+}
+
+.placeholder-text {
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+}
+
+
+
+
+// .logo-light img {
+//     width: 150px;
+//     height: auto;
+// }
+
+
+
+.tp-slider-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: 0;
+}
+
+.tp-slider-video,
+.tp-slider-video-wrapper {
+  border-radius: 0 !important;
+}
+
+
+// Newsletter
+
+.tp-section-title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.tp-event-box {
+  background-color: #f9f9f9;
+  min-height: 250px;
+}
+
+.placeholder-text {
+  font-size: 16px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+
+// Customization of Background colors, size and fonts
+.featured-section {
+  background-color: #fff ;
+  height: 95vh !important; 
+  overflow: hidden !important;
+
+}
+.store-section{
+	background-color: #EED6C7 !important;
+	height: 95vh !important; 
+  	overflow: hidden !important;
+}
+
+.events-section{
+	height: 95vh !important; 
+  overflow: hidden !important;
+}
+
+.events-section h2{
+  color: #D4B050 !important;
+}
+.events-section .tp-btn{
+  border-color: #D4B050 !important;
+  color: #D4B050 !important;
+}
+.newsletter-section{
+
+background-color: #EED6C7 !important;
+
+height: 85vh !important; 
+overflow: hidden !important;
+}
+
+.footer-section{
+background-color: #D38760 !important;
+color: white !important;
+}
+
+
+.featured-box {
+  background-color: #CD5B42 !important;
+//   border-radius: 8px !important;
+  padding: 20px !important;
+  min-height: 300px; 
+
+}
+
+.tp-featured-title-3 a{
+  color: #000 !important;
+}
+
+.tp-featured-item-3 {
+  padding: 0;  /* Remove padding to avoid extra space */
+  margin: 0;
+}
+
+
+.tp-featured-item-wrapper {
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.tp-featured-item-wrapper.hovered {
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.tp-featured-item-wrapper.not-hovered {
+  opacity: 0.4;
+  filter: blur(2px);
+}
+
+.tp-featured-thumb-3 {
+  width: 100%;
+  height: 300px; /* Set a fixed height for the image box, adjust as needed */
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tp-featured-thumb-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Fill box, crop if needed */
+  display: block;
+  position: relative; /* Remove absolute to keep flexbox centering */
+}
+
+.tp-featured-item-wrapper {
+  transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+
+  &.hovered {
+    transform: scale(1.05);
+    z-index: 2;
+  }
+
+  &.not-hovered {
+    opacity: 0.4;
+    filter: blur(2px);
+  }
+}
+
+
+
+
+.store-box {
+  background-color: #D5BBAF !important;
+  padding: 20px !important;
+  min-height: 300px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important; /* hides overflow */
+}
+
+.store-box .tp-featured-thumb-3 {
+  width: 100% !important;
+  height: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+
+.store-box .tp-featured-thumb-3 img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important; /* cover and crop */
+  display: block !important;
+}
+
+
+
+
+
+
+// Events
+/* Remove gutter/margin between the two columns */
+.combined-event-box {
+  --bs-gutter-x: 0; /* If using Bootstrap 5 */
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Left box background color */
+.event-left-box {
+  background-color: #EED6C7;
+  min-height: 300px;
+}
+
+/* Right box background color */
+.event-right-box {
+  background-color: #C66335;
+  min-height: 300px;
+}
+
+
+
+.newsletter-combined-row {
+  --bs-gutter-x: 0; /* remove horizontal gutters */
+}
+
+.newsletter-left-box {
+  background-color:  #C66335; /* colored left empty box */
+  min-height: 100%; /* full height */
+}
+
+.newsletter-right-box {
+//   background-color: #D5BBAF; /* colored right box */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100%; /* equal height with left */
+  color: white;
+  
+  padding: 1.5rem;
+}
+
+// .tp-btn {
+//   /* keep your button styling here */
+// }
+
+
+.tp-section-title-featured {
+  color: #C66335 !important; /* White text */
+}
+
+.tp-section-title-store{
+	color: #C66335 !important; /* White text */
+}
+
+.tp-section-title-events{
+	color: #C66335 !important; /* White text */
+}
+
+.tp-section-title-newsletter{
+	color: #C66335 !important; /* White text */
+}
+
+
+/* Ensure the row height matches the combined button + text height */
+/* The flex align-items center in both columns will make their heights equal */
+
+
+.footer-section {
+  color: #ffffff !important;
+}
+
+.footer-section a {
+  color: #ffffff !important;
+}
+
+.footer-section a:hover {
+  color: #dddddd !important; /* optional: lighter hover */
+}
+
+.footer-section .tp-footer-widget-title {
+  color: #ffffff !important;
+}
+
+.tp-footer-copyright p {
+  color: #ffffff !important;
+}
+
+.tp-featured-subtitle {
+  color: #000 !important; // black
+  font-weight: 100 !important;
+  margin-top: 5px;
+}
+
+
+.tp-btn {
+  // background-color: #C66335 !important;
+  background-color: transparent !important;
+  color: #C66335 !important;
+  border-color: #C66335 !important;
+  border: none;
+  // border-radius: 32px !important; // adjust radius as needed
+  padding: 12px 24px !important;
+  font-weight: 500 !important;
+  display: inline-block !important;
+  text-align: center !important;
+  transition: all 0.3s ease !important;
+  font-family: "Public Sans" !important;
+  font-weight: 1000 !important;
+
+  &:hover {
+    background-color: darken(#C66335, 10%);
+    color: #fff;
+  }
+}
+
+
+
+// demo for method
+.demo{
+	@include tp-transition(color, .3s, linear);	
+
+	@include tp-transition-mul((color .3s linear, transform .2s ease));	
+
+	@include rtl{
+		margin-left: 0;
+		margin-right: 15px;
+	}
+	@include tp-root('div'){
+		img{
+			margin-left: 10px;
+		}
+	}
+	@include dark{
+		color: yellow;
+	}
+}
+
+
+/*----------------------------------------
+    Body Overlay 
+-----------------------------------------*/
+
+.body-overlay{
+    background-color: var(--tp-common-black);
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	@include tp-transition();
+
+	&:hover{
+		cursor: url('../../img/icon/cross-out.png'), pointer;
+	}
+}
+
+.body-overlay.opened{
+	opacity: .7;
+    visibility: visible;
+}
+
+
+
+/* dropcap */
+.#{$theme-prifix}-dropcap{
+	&::first-letter{
+		font-size: 90px;
+		font-weight: 500;
+		float: left;
+		text-align: center;
+		color: var(--tp-common-black);
+		margin-right: 5px;
+		line-height: inherit;
+		text-transform: capitalize;
+	}
+}
+
+// for svg
+// on hover stroke animation
+// not checked
+.class{
+	stroke-dasharray: 189px, 191px;
+	stroke-dashoffset: 0px;
+}
+
+
+.#{$theme-prifix}-all-font-roboto{
+	& *:not(i){
+		@extend %tp-ff-roboto;
+	}
+}
+/* gutter for x axis */
+.tp-gx-20{
+	--bs-gutter-x: 20px;
+
+	@media #{$lg}{
+		--bs-gutter-x: 20px;
+	}
+
+	@media #{$md}{
+		--bs-gutter-x: 20px;
+	}
+
+	@media #{$sm}{
+		--bs-gutter-x: 15px;
+	}
+
+	@media #{$xs}{
+		--bs-gutter-x: 10px;
+	}
+
+	& [class*="col-"]{
+		padding-right: calc(var(--bs-gutter-x) * .5);
+		padding-left: calc(var(--bs-gutter-x) * .5);
+		margin-top: var(--bs-gutter-y);
+	}
+}
+
+/* gutter for x axis */
+.tp-gx-30{
+	--bs-gutter-x: 30px;
+
+	@media #{$lg}{
+		--bs-gutter-x: 30px;
+	}
+
+	@media #{$md}{
+		--bs-gutter-x: 30px;
+	}
+
+	@media #{$sm}{
+		--bs-gutter-x: 15px;
+	}
+
+	@media #{$xs}{
+		--bs-gutter-x: 10px;
+	}
+
+	& [class*="col-"]{
+		padding-right: calc(var(--bs-gutter-x) * .5);
+		padding-left: calc(var(--bs-gutter-x) * .5);
+		margin-top: var(--bs-gutter-y);
+	}
+}
+
+/* gutter for x axis */
+.tp-gx-40{
+	--bs-gutter-x: 40px;
+
+	@media #{$lg}{
+		--bs-gutter-x: 40px;
+	}
+
+	@media #{$md}{
+		--bs-gutter-x: 30px;
+	}
+
+	@media #{$sm}{
+		--bs-gutter-x: 30px;
+	}
+
+	@media #{$xs}{
+		--bs-gutter-x: 15px;
+	}
+
+	& [class*="col-"]{
+		padding-right: calc(var(--bs-gutter-x) * .5);
+		padding-left: calc(var(--bs-gutter-x) * .5);
+		margin-top: var(--bs-gutter-y);
+	}
+}
