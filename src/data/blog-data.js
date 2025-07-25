@@ -90,7 +90,7 @@ const blogData = [
     img: blog_5,
     date: "18 March, 2023",
     author:'John Smith',
-    title: "Fast fashion: How clothes are linked to climate change",
+    title: "In the Depths of the Roast: A Love Letter to Dark Coffee",
     tags: ["Fashion", "Lift Style","News"],
     category:'fashion',
     comments:3,

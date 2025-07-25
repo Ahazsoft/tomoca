@@ -14,6 +14,8 @@ const Menus = () => {
             <div className="home-menu tp-submenu tp-mega-menu">
               <div className="row row-cols-1 row-cols-lg-4 row-cols-xl-4">
                 {menu.home_pages.map((home, i) => (
+
+                  
                   <div key={i} className="col">
                     <div className="home-menu-item">
                       <Link href={home.link}>
@@ -64,6 +66,9 @@ const Menus = () => {
         ) : (
           <li key={menu.id}>
             <Link href={menu.link}>{menu.title}</Link>
+            {console.log("Title" , menu.title)}
+            {console.log("Link" , menu.link)}
+
           </li>
         )
       )}

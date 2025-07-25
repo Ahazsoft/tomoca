@@ -119,35 +119,35 @@ import home_4 from '@assets/img/menu/menu-home-4.jpg';
 // ]
 
 const menu_data = [
-    {
+  {
     id: 1,
     single_link: true,
     title: 'Home',
     link: '/',
   },
-      {
+  {
     id: 2,
     single_link: true,
     title: 'Events',
     link: '/',
   },
-      {
+  {
     id: 3,
     single_link: true,
     title: 'Blog',
-    link: '/',
+    link: '/blog-details',
   },
-      {
+  {
     id: 4,
     single_link: true,
-    title: 'Games',
-    link: '/',
+    title: 'Our Approach',
+    link: '/our-approach',
   },
-      {
+  {
     id: 5,
     single_link: true,
     title: 'About',
-    link: '/home-3',
+    link: '/about',
   },
 ]
 

@@ -4,11 +4,12 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, EffectFade, Pagination } from "swiper/modules";
 
 // Import images
-import slider_bg_2 from "@assets/img/slider/3/slider-2.jpg";
+// import slider_bg_2 from "@/assets/img/product/featured/featured-5.jpg";
 import slider_bg_3 from "@assets/img/slider/3/slider-3.jpg";
 
 // Direct Dropbox link for video
 const videoURL = "https://dl.dropboxusercontent.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4";
+const slider_bg_2 = "/assets/img/product/featured/featured-5.jpg"
 
 // Slider settings
 const slider_setting = {
@@ -30,7 +31,7 @@ const slider_setting = {
 const slider_data = [
   {
     id: 1,
-    bg: { src: videoURL, type: "video" },
+    bg: { src: slider_bg_2, type: "image" },
     subtitle: "Winter Collection 2023",
     title: "Be your kind of beauty",
   },
@@ -48,7 +49,7 @@ const slider_data = [
   },
 ];
 
-const BeautyBanner = () => {
+const AboutBanner = () => {
   return (
     <section className="tp-slider-area p-relative z-index-1">
       <Swiper
@@ -88,9 +89,9 @@ const BeautyBanner = () => {
                 <div className="col-xl-6 col-lg-6 col-md-8">
                   <div className="tp-slider-content-3">
                     <h3 className="tp-slider-title-3">
-                      Perfecting Coffee Roasting Since 1953
+                      A Legacy Brewed in Ethiopia
                     </h3>
-                    <span>From Ethiopia to the World</span>
+                    {/* <span>About Us</span> */}
 
                     <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
                       {/* Feature items can go here */}
@@ -117,4 +118,4 @@ const BeautyBanner = () => {
   );
 };
 
-export default BeautyBanner;
+export default AboutBanner;

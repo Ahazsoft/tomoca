@@ -27,7 +27,7 @@ const BlogDetailsArea = ({blog}) => {
           </div>
           <div className="col-xl-12">
             <div className="tp-postbox-details-thumb">
-              <Image src={blog_details_big_img} alt="blog-big-img" />
+              {/* <Image src={blog_details_big_img} alt="blog-big-img" /> */}
             </div>
           </div>
         </div>
@@ -35,18 +35,33 @@ const BlogDetailsArea = ({blog}) => {
           <div className="col-xl-9 col-lg-8">
             <div className="tp-postbox-details-main-wrapper">
               <div className="tp-postbox-details-content">
-                <p className="tp-dropcap">sales process is critically important to the success of your reps and your business. If you have never seen a really skilled salesperson work, it seems almost effortless. They ask great questions, craftt perfect proposal, answer questions, address concerns and seamlessly seal the Underneath the surface of all of that, the salesperson has probably dedicated hours honing their craft and ensuring the process moves smoothly.</p>
+                <p className="tp-dropcap">There’s something captivating about the dark.
+                  It draws you in—quietly, confidently. Not with sweetness or softness, but with strength and mystery. That’s what it feels like to drink Tomoca’s Bar Type dark roast. It’s not just a coffee—it’s a mood, a moment, a memory brewed into a cup.
+                </p>
+              
+                <p>We’ve long known that coffee tells stories. The Bar Type tells the story of power restrained, of fire mastered, of a bean pushed to its limit—and thriving there.
+                  As the grinder whirs and the aroma rises, there’s a sense that something bold is on its way—notes of roasted nuts, bitter chocolate, and the unmistakable whisper of smoke from the fire it endured. These are not shy flavors. They speak in full sentences. They linger.
+                </p>
 
-                <p>One of the challenges that often surfaces when  working with a remote sales team is a lack of transparency over what is happening, and where in the process things are taking place. We’re going to peel back the curtain and show you how to create the best sales.</p>
-
-                <h4 className="tp-postbox-details-heading">Breaking Up With Fast Fashion Has Been Easier</h4>
-                <p>Lommodo ligula eget dolor. Aenean massa. Cum sociis que penatibus magnis dis parturient montes lorem, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque euro, pretium, sem. Nulla onsequat massa quis enim. donec pede justo fringilla vel aliquet.</p>
-
-                <div className="tp-postbox-details-desc-thumb text-center">
+                {/* <div className="tp-postbox-details-desc-thumb text-center">
                   <Image src={blog_details_sm_img} alt="details-sm-img" />
                   <span className="tp-postbox-details-desc-thumb-caption">Gucci’s Women’s Cruise Collection 2023 Lookbook Has Arrived</span>
-                </div>
-                <p>“We’re so glad we’ll be working with you to get your new marketing strategy up and running. I have attached the details of your package. Next you’ll get an email from Jen to schedule your kick-off meeting and be assigned your account rep. During your kick-off meeting, we will introduce your project team, let you know what access we need to start.” </p>
+                </div> */}
+                <p>This is the kind of coffee that doesn’t ask for cream or sugar—it asks for attention.
+                  It’s no surprise that espresso is its chosen stage. Under the pressure of steam and steel, 
+                  the Bar Type releases its full expression—a rich, velvety shot with a lingering finish that holds its own.
+                </p>
+
+                <p>For those who love their coffee strong, assertive, and unapologetically bold, the Bar Type is more than a roast—it’s a ritual. 
+                  It’s the kind of coffee you drink in the early hours before the world wakes, 
+                  or in the quiet of late nights, when only the boldest thoughts remain.
+                </p>
+
+                <p>So the next time you need a cup that means business, remember:
+                  Go dark. Go bold. Go Bar.
+                  Because in the heart of the roast, that’s where the real flavor lives.
+
+                </p>
 
                 <div className="tp-postbox-details-quote">
                   <blockquote>
@@ -54,24 +69,13 @@ const BlogDetailsArea = ({blog}) => {
                       <Image className="tp-postbox-details-quote-shape-1" src={shape_line} alt="shape" />
                       <Image className="tp-postbox-details-quote-shape-2" src={shape_line_2} alt="shape" />
                     </div>
-                    <p>There is a way out of every box, a solution to every puzzle its just a matter of finding it.</p>
-                    <cite>Shahnewaz Sakil</cite>
+                    <p>Go dark. Go bold. Go Bar.</p>
+                    <cite></cite>
                   </blockquote>
                 </div>
 
-                <h4 className="tp-postbox-details-heading">Exploring the English Countryside</h4>
-                <p>Lorem ligula eget dolor. Aenean massa. Cum sociis que penatibus et magnis dis parturient montes lorem,nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque euro, pretium quis, sem. Nulla onsequat massa quis enim.</p>
-
-                <div className="tp-postbox-details-list">
-                  <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>At vero eos et accusamus et iusto odio.</li>
-                    <li>Excepteur sint occaecat cupidatat non proident.</li>
-                  </ul>
-                </div>
-                <p>Rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer cidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae lorem.</p>
-
-                <div className="tp-postbox-details-share-wrapper">
+                
+                {/* <div className="tp-postbox-details-share-wrapper">
                   <div className="row">
                     <div className="col-xl-8 col-lg-6">
                       <div className="tp-postbox-details-tags tagcloud">
@@ -93,7 +97,7 @@ const BlogDetailsArea = ({blog}) => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* PostboxDetailsNav */}
                 <PostboxDetailsNav />
