@@ -91,7 +91,13 @@ const AboutBanner = () => {
                     <h3 className="tp-slider-title-3">
                       A Legacy Brewed in Ethiopia
                     </h3>
-                    {/* <span>About Us</span> */}
+                    <span>
+                      When you experience Tomoca Coffee, you’re not just tasting coffee, 
+                      you’re tasting Ethiopia’s soul. TOMOCA has been there when our nation’s 
+                      best sipped a cup of coffee and went on to change the flow of history, 
+                      when a son and a daughter tasted their first macchiato, when news, 
+                      good and bad was shared, and when memories were made... We have been there.
+                    </span>
 
                     <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
                       {/* Feature items can go here */}

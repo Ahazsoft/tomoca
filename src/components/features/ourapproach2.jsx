@@ -73,7 +73,7 @@ const SectionTwo = () => {
                 Cultivation
               </h2>
               <p style={{ textAlign: 'center', width: '100%', margin: 0 }}>
-                Grown on small farms in the Ethiopian highlands, cherries are handpicked at peak ripeness for optimal flavor.
+                Our journey begins on smallholder farms in the Ethiopian highlands, where skilled farmers cultivate coffee in rich, fertile soils. Each coffee cherry is carefully handpicked at peak ripeness, ensuring optimal flavor and quality in every bean.
               </p>
             </div>
           </div>
@@ -97,8 +97,7 @@ const SectionTwo = () => {
             Cooperatives
           </h2>
           <p style={{ textAlign: 'center', width: '50%', marginLeft: 190 }}>
-            Cherries are delivered to cooperatives, where farmers work together to process, market, and maintain quality—ensuring fair trade and sustainability.
-          </p>
+            After harvesting, cherries are delivered to cooperatives, where farmers collaborate to process, market, and maintain quality. This system ensures fair trade, supports sustainability, and strengthens local communities, allowing every Tomoca bean to reflect both care and integrity.          </p>
         </div>
         <div style={leftColumnStyle}>
           <Image
@@ -139,18 +138,24 @@ const SectionTwo = () => {
         >
             <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>Processing</h2>
 
+            <p>
+              Tomoca coffee is carefully processed using two traditional methods that highlight the unique characteristics of each bean.
+            </p>
+
             <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start' }}>
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+                
                 <img src={WaterSplashIcon.src} alt="Water Process" style={{ width: '24px', height: '24px', marginTop: '4px' }} />
+
                 <p style={{ margin: 0 }}>
-                <strong>Washed Process:</strong> Produces bright, clean flavors by fermenting and washing the cherry before drying.
+                <strong>Washed Process (Water Process)</strong>  Also known as wet processing, cherries are pulped to remove the outer layer, then fermented, washed, and dried. This method produces clean, bright, and vibrant flavors that emphasize clarity and acidity.
                 </p>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
                 <img src={LeafIcon.src} alt="Natural Process" style={{ width: '24px', height: '24px', marginTop: '4px' }} />
                 <p style={{ margin: 0 }}>
-                <strong>Natural Process:</strong> Sun-dries the whole cherry, allowing sugars and fruit to infuse the bean—yielding bold, fruity notes.
+                <strong>Natural Process:</strong> Cherries are sun-dried with the fruit intact, allowing natural sugars to infuse the beans. This method yields bold, fruity, and full-bodied coffee profiles, capturing the richness of the fruit and the essence of the Ethiopian highlands.
                 </p>
             </div>
             </div>
@@ -174,8 +179,7 @@ const SectionTwo = () => {
             Quality Control 
           </h2>
           <p style={{ textAlign: 'center', width: '50%', marginLeft: 190 }}>
-            Every batch is tested with meticulous care to ensure it meets our high standards for flavor, balance, and aroma.
-          </p>
+            Every batch of Tomoca coffee undergoes rigorous testing to ensure it meets our exacting standards for flavor, balance, and aroma. From the farm to the roastery, we meticulously evaluate each bean, guaranteeing that only the finest coffee is selected for roasting and/or export.          </p>
         </div>
         <div style={leftColumnStyle}>
           <Image

@@ -2,10 +2,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import featured_1 from '@assets/img/product/featured/featured-1.png';
-import featured_2 from '@assets/img/product/featured/featured-2.png';
-import featured_3 from '@assets/img/product/featured/featured-3.png';
-import featured_4 from '@assets/img/product/featured/featured-4.png';
+import featured_1 from '@assets/img/product/featured/1.jpg';
+import featured_2 from '@assets/img/product/featured/2.jpg';
+import featured_3 from '@assets/img/product/featured/3.jpg';
+import featured_4 from '@assets/img/product/featured/4.jpg';
 
 import { ArrowRightSmTwo } from "@/svg";
 
@@ -14,8 +14,8 @@ const featured_data = [
   {
     id: 1,
     img: featured_1,
-    title: <>Coffee 200gm - 999ETB</>,
-    subtitle: 'Lorum Ipsum',
+    title: <>200 grm Tin Can</>,
+    // subtitle: 'Tin Can',
     save: 72,
     bgColor: '#D35F44',
     label: 'New',
@@ -23,9 +23,9 @@ const featured_data = [
   },
   {
     id: 2,
-    img: featured_4,
-    title: <>Coffee 200gm - 999ETB</>,
-    subtitle: 'Lorum Ipsum',
+    img: featured_2,
+    title: <>100 grm</>,
+    // subtitle: 'Lorum Ipsum',
     save: 98,
     bgColor: '#DB6C2F',
     label: 'Limited Release',
@@ -33,9 +33,9 @@ const featured_data = [
   },
   {
     id: 3,
-    img: featured_1,
-    title: <>Coffee 200gm - 999ETB</>,
-    subtitle: 'Lorum Ipsum',
+    img: featured_3,
+    title: <>375 grm</>,
+    // subtitle: 'Lorum Ipsum',
     save: 133,
     bgColor: '#E14829',
     label: 'Best Seller',
@@ -44,8 +44,8 @@ const featured_data = [
   {
     id: 4,
     img: featured_4,
-    title: <>Coffee 200gm - 999ETB</>,
-    subtitle: 'Lorum Ipsum',
+    title: <>500 grm</>,
+    // subtitle: 'Lorum Ipsum',
     save: 110,
     bgColor: '#D35F44',
     label: 'Best Seller',

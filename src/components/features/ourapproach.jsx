@@ -56,11 +56,8 @@ const SectionOne = () => {
           Born in the Forest. Crafted with Precision. Roasted to Perfection.
         </h2>
         <p style={paragraphStyle}>
-          At the heart of every Tomoca blend is Ethiopia’s prized Arabica bean—sourced from regions like Kaffa, Jimma, Yirgacheffe, and Guji. 
-          These beans thrive in rich volcanic soil, under the shade of native forests, where they develop bright floral notes, layered acidity, and a full, complex body.
-          This isn’t coffee grown on vast, uniform plantations. It’s wild, biodiverse, and rooted in generations of tradition. 
-          Forest coffee in Ethiopia grows naturally, nurtured by local smallholder farmers who pass down their knowledge and practices through the ages. 
-          For these communities, coffee is not just a livelihood—it’s a way of life.
+          Every Tomoca blend starts with Ethiopia’s prized Arabica beans from regions like Kaffa, Jimma, Yirgacheffe, and Guji. Grown in rich volcanic soil under the shade of native forests, these beans develop bright floral notes, layered acidity, and a full, complex body. Unlike commercial plantations, forest coffee grows wild in biodiverse ecosystems, coexisting with native vegetation and creating a natural balance.
+          Smallholder farmers, carrying knowledge passed down through generations, tend these beans with care. For them, coffee is more than a livelihood, it is a way of life. Their dedication ensures that each Tomoca roast reflects Ethiopia’s heritage, landscapes, and communities, transforming every cup into a true celebration of authenticity and craftsmanship.
         </p>
       </div>
     </div>

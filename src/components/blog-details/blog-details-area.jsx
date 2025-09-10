@@ -35,34 +35,27 @@ const BlogDetailsArea = ({blog}) => {
           <div className="col-xl-9 col-lg-8">
             <div className="tp-postbox-details-main-wrapper">
               <div className="tp-postbox-details-content">
-                <p className="tp-dropcap">There’s something captivating about the dark.
-                  It draws you in—quietly, confidently. Not with sweetness or softness, but with strength and mystery. That’s what it feels like to drink Tomoca’s Bar Type dark roast. It’s not just a coffee—it’s a mood, a moment, a memory brewed into a cup.
+                <p className="tp-dropcap">
+                  There’s a certain magic in darkness. Quiet, confident, and unapologetically bold, darkness draws you in, and nowhere is that more true than in a cup of Tomoca’s Bar Type dark roast. This isn’t just coffee; it’s a mood, a moment, a ritual. It’s the kind of roast that doesn’t just wake you up, it commands your attention.
                 </p>
               
-                <p>We’ve long known that coffee tells stories. The Bar Type tells the story of power restrained, of fire mastered, of a bean pushed to its limit—and thriving there.
-                  As the grinder whirs and the aroma rises, there’s a sense that something bold is on its way—notes of roasted nuts, bitter chocolate, and the unmistakable whisper of smoke from the fire it endured. These are not shy flavors. They speak in full sentences. They linger.
+                <p>
+                  The Bar Type tells a story of fire mastered and flavor forged. Each bean is pushed to its limit, roasting slowly until it achieves a deep, robust character. The result? Notes of dark chocolate, roasted nuts, and a delicate whisper of smoke that lingers long after the last sip. With its reduced acidity, the coffee’s strength shines through, offering a smooth, full-bodied experience that feels both powerful and refined.
                 </p>
 
                 {/* <div className="tp-postbox-details-desc-thumb text-center">
                   <Image src={blog_details_sm_img} alt="details-sm-img" />
                   <span className="tp-postbox-details-desc-thumb-caption">Gucci’s Women’s Cruise Collection 2023 Lookbook Has Arrived</span>
                 </div> */}
-                <p>This is the kind of coffee that doesn’t ask for cream or sugar—it asks for attention.
-                  It’s no surprise that espresso is its chosen stage. Under the pressure of steam and steel, 
-                  the Bar Type releases its full expression—a rich, velvety shot with a lingering finish that holds its own.
+                <p>
+                  Espresso is where the Bar Type truly comes alive. Under the pressure of steam and steel, it releases a velvety shot with a finish that lingers, perfect for early mornings when the world is still quiet, or late nights when bold thoughts need bold coffee. This is a coffee that doesn’t ask for cream or sugar; it demands to be experienced as it is, in all its intense, assertive glory.
                 </p>
 
-                <p>For those who love their coffee strong, assertive, and unapologetically bold, the Bar Type is more than a roast—it’s a ritual. 
-                  It’s the kind of coffee you drink in the early hours before the world wakes, 
-                  or in the quiet of late nights, when only the boldest thoughts remain.
+                <p>
+                  For lovers of strong, unapologetic coffee, the Bar Type is more than a roast, it’s a statement. It’s a cup that embodies confidence, tradition, and the artistry of roasting. Next time you seek a coffee that means business, remember: Go dark. Go bold. Go Bar. Because in the heart of the roast, the real flavor lives.
                 </p>
 
-                <p>So the next time you need a cup that means business, remember:
-                  Go dark. Go bold. Go Bar.
-                  Because in the heart of the roast, that’s where the real flavor lives.
-
-                </p>
-
+               
                 <div className="tp-postbox-details-quote">
                   <blockquote>
                     <div className="tp-postbox-details-quote-shape">
