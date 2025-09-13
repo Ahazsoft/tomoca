@@ -77,7 +77,7 @@ const SectionThree = () => {
           <h4>Flavor Profile</h4>
 
           <p style={paragraphStyle}>
-            Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee's strength to shine, making each sip smooth and satisfying.
+            Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee&#39;s strength to shine, making each sip smooth and satisfying.
           </p>
 
 
@@ -103,8 +103,9 @@ const SectionThree = () => {
           <h4>Best Brewing Method</h4>
 
           <p style={paragraphStyle}>
-            Ideal for filter brewing, such as pour-over or drip coffee makers. The medium roast level preserves the beans' inherent flavors while offering a well-rounded cup that is neither too strong nor too light. It’s perfect for those who enjoy a nuanced cup with a touch of sweetness.          
+            Ideal for filter brewing, such as pour-over or drip coffee makers. The medium roast level preserves the beans&#39; inherent flavors while offering a well-rounded cup that is neither too strong nor too light. It&#39;s perfect for those who enjoy a nuanced cup with a touch of sweetness.
           </p>
+
         </div>
 
         {/* Light Roast */}
@@ -120,9 +121,10 @@ const SectionThree = () => {
 
           <h4>Best Brewing Method</h4>
 
-          <p style={paragraphStyle}>
-            Specifically recommended for Turkish coffee preparation or other specialized brewing methods like AeroPress. The lighter roast is ideal for methods that highlight the coffee's subtleties, delivering a cup that is both refreshing and intricate, perfect for those who appreciate a lighter, more complex brew.       
-          </p>
+        <p style={paragraphStyle}>
+          Specifically recommended for Turkish coffee preparation or other specialized brewing methods like AeroPress. The lighter roast is ideal for methods that highlight the coffee&#39;s subtleties, delivering a cup that is both refreshing and intricate, perfect for those who appreciate a lighter, more complex brew.
+        </p>
+
         </div>
 
         <p style={{ fontSize: '16px', paddingLeft: '180px' }}>
