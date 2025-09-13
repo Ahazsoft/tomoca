@@ -72,8 +72,9 @@ const About = () => {
               </h2>
               <p style={{ textAlign: 'center', width: '100%', margin: 0 }}>
                 Since 1953, Tomoca Coffee has stood as Ethiopia’s oldest and most iconic coffee roastery, rooted in the birthplace of Arabica and dedicated to perfecting the art of roasting for over 70 years. 
-                Established as TO.MO.CA. Coffee Pvt. Ltd. Co.—an abbreviation of the Italian "Torrefazione Moderna Café", meaning 'Modern Coffee Roasting', we pioneered modern coffee roasting and brewing in Ethiopia. Today, with more than a dozen coffee shops across Ethiopia and internationally, Tomoca continues to share the country’s rich coffee heritage with the world.
+                Established as TO.MO.CA. Coffee Pvt. Ltd. Co.—an abbreviation of the Italian &quot;Torrefazione Moderna Café&quot;, meaning &#39;Modern Coffee Roasting&#39;, we pioneered modern coffee roasting and brewing in Ethiopia. Today, with more than a dozen coffee shops across Ethiopia and internationally, Tomoca continues to share the country’s rich coffee heritage with the world.
               </p>
+
             </div>
           </div>
       </div>
@@ -117,7 +118,7 @@ const About = () => {
       <div style={rowStyle}>
         <div style={leftColumnStyle}>
 
-          <Image
+        <Image
           src={featured_3}
           alt="Heritage Image"
           fill
