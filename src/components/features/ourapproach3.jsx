@@ -77,14 +77,16 @@ const SectionThree = () => {
           <h4>Flavor Profile</h4>
 
           <p style={paragraphStyle}>
-            Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee's strength to shine, making each sip smooth and satisfying.          
+            Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee's strength to shine, making each sip smooth and satisfying.
           </p>
+
 
           <h4>Best Brewing Method</h4>
 
-          <p style={paragraphStyle}>
-            Perfect for Espresso. The boldness of the Bar Type stands up well to the concentrated brewing process of espresso, delivering a powerful shot with a lingering finish. It's ideal for those who enjoy their coffee strong and assertive.          
-          </p>
+        <p style={paragraphStyle}>
+          Perfect for Espresso. The boldness of the Bar Type stands up well to the concentrated brewing process of espresso, delivering a powerful shot with a lingering finish. It&#39;s ideal for those who enjoy their coffee strong and assertive.
+        </p>
+
         </div>
 
         {/* Medium Roast */}
@@ -113,7 +115,9 @@ const SectionThree = () => {
           <h4>Flavor Profile</h4>
 
           <p style={paragraphStyle}>
-            Delicate, aromatic, and refined with a subtle complexity. The Turkish Type retains much of the coffee bean's original flavors, offering a bright, lively cup with floral and citrus notes. The lighter roast ensures that the natural oils within the bean remain intact, contributing to a more nuanced and aromatic experience.          </p>
+            Delicate, aromatic, and refined with a subtle complexity. The Turkish Type retains much of the coffee bean&apos;s original flavors, offering a bright, lively cup with floral and citrus notes. The lighter roast ensures that the natural oils within the bean remain intact, contributing to a more nuanced and aromatic experience.
+          </p>
+
           <h4>Best Brewing Method</h4>
 
           <p style={paragraphStyle}>
