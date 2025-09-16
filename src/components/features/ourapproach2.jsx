@@ -33,6 +33,9 @@ const SectionTwo = () => {
   const rightColumnStyle = {
     ...columnStyle,
     backgroundColor: '#C66335', // Light blue
+    display: 'flex',
+    justifyContent: 'center', // ⬅️ center vertically
+    alignItems: 'center',  
     
     textAlign: 'center',
   };
@@ -53,58 +56,68 @@ const SectionTwo = () => {
           src={featured_1}
           alt="Heritage Image"
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           placeholder="blur"
         />
         </div>
         <div style={rightColumnStyle}>
-            <div
-              style={{
-                padding: '120px',
-                margin: '150px',
-                maxWidth: '600px',      // limit width
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',   // center title horizontally
-              }}
-            >
-              <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>
-                Cultivation
-              </h2>
-              <p style={{ textAlign: 'center', width: '100%', margin: 0 }}>
-                Our journey begins on smallholder farms in the Ethiopian highlands, where skilled farmers cultivate coffee in rich, fertile soils. Each coffee cherry is carefully handpicked at peak ripeness, ensuring optimal flavor and quality in every bean.
-              </p>
-            </div>
+          <div
+            style={{
+              padding: '120px',
+              margin: '150px',
+              maxWidth: '600px', // limit width
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center', // center title horizontally
+              boxSizing: 'border-box',
+              aspectRatio: '1 / 1',  // keeps the div a perfect square
+              justifyContent: 'center', // vertically center content inside the square
+            }}
+          >
+            <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>
+              Cultivation
+            </h2>
+            <p style={{ textAlign: 'justify', width: '100%', margin: 0, lineHeight: '1.6' }}>
+              Our journey begins on smallholder farms in the Ethiopian highlands, where skilled farmers cultivate coffee in rich, fertile soils. Each coffee cherry is carefully handpicked at peak ripeness, ensuring optimal flavor and quality in every bean.
+            </p>
           </div>
+        </div>
+
       </div>
 
       {/* Row 2: Mirrored layout */}
       <div style={rowStyle}>
         <div style={rightColumnStyle}>
           <div
-              style={{
-                padding: '60px',
-                margin: '80px',
-                maxWidth: '600px',      // limit width
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',   // center title horizontally
-              }}
-            ></div>
-          <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>
-            Cooperatives
-          </h2>
-          <p style={{ textAlign: 'center', width: '50%', marginLeft: 190 }}>
-            After harvesting, cherries are delivered to cooperatives, where farmers collaborate to process, market, and maintain quality. This system ensures fair trade, supports sustainability, and strengthens local communities, allowing every Tomoca bean to reflect both care and integrity.          </p>
+            style={{
+              padding: '60px',
+              margin: '80px',
+              maxWidth: '600px',      // limit width
+              width: '100%',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',   // center title horizontally
+              boxSizing: 'border-box',
+              aspectRatio: '1 / 1',  // make container square
+              justifyContent: 'center', // vertically center content
+            }}
+          >
+            <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>
+              Cooperatives
+            </h2>
+            <p style={{ textAlign: 'justify', width: '100%', margin: 0, lineHeight: '1.6' }}>
+              After harvesting, cherries are delivered to cooperatives, where farmers collaborate to process, market, and maintain quality. This system ensures fair trade, supports sustainability, and strengthens local communities, allowing every Tomoca bean to reflect both care and integrity.
+            </p>
+          </div>
         </div>
+
         <div style={leftColumnStyle}>
           <Image
           src={featured_2}
           alt="Heritage Image"
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           placeholder="blur"
         />
           
@@ -119,14 +132,14 @@ const SectionTwo = () => {
           src={featured_3}
           alt="Heritage Image"
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           placeholder="blur"
         />
 
         </div>
         <div style={rightColumnStyle}>
         <div
-            style={{
+          style={{
             padding: '60px',
             margin: '80px',
             maxWidth: '600px',
@@ -134,59 +147,71 @@ const SectionTwo = () => {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            }}
+            boxSizing: 'border-box',
+          }}
         >
             <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>Processing</h2>
 
-            <p>
-              Tomoca coffee is carefully processed using two traditional methods that highlight the unique characteristics of each bean.
-            </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start' }}>
-            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                
-                <img src={WaterSplashIcon.src} alt="Water Process" style={{ width: '24px', height: '24px', marginTop: '4px' }} />
-
-                <p style={{ margin: 0 }}>
-                <strong>Washed Process (Water Process)</strong>  Also known as wet processing, cherries are pulped to remove the outer layer, then fermented, washed, and dried. This method produces clean, bright, and vibrant flavors that emphasize clarity and acidity.
+            <p style={{ textAlign: 'center', marginBottom: '24px' }}>
+                  Tomoca coffee is carefully processed using two traditional methods that highlight the unique characteristics of each bean.
                 </p>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', alignItems: 'flex-start', width: '100%' }}>
+            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
+              <img
+                src={WaterSplashIcon.src}
+                alt="Water Process"
+                style={{ width: '24px', height: '24px', marginTop: '4px', flexShrink: 0 }}
+              />
+              <p style={{ margin: 0, textAlign: 'justify', flex: 1 }}>
+                <strong>Washed Process (Water Process):</strong> Also known as wet processing, cherries are pulped to remove the outer layer, then fermented, washed, and dried. This method produces clean, bright, and vibrant flavors that emphasize clarity and acidity.
+              </p>
             </div>
 
             <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <img src={LeafIcon.src} alt="Natural Process" style={{ width: '24px', height: '24px', marginTop: '4px' }} />
-                <p style={{ margin: 0 }}>
+              <img
+                src={LeafIcon.src}
+                alt="Natural Process"
+                style={{ width: '24px', height: '24px', marginTop: '4px', flexShrink: 0 }}
+              />
+              <p style={{ margin: 0, textAlign: 'justify', flex: 1 }}>
                 <strong>Natural Process:</strong> Cherries are sun-dried with the fruit intact, allowing natural sugars to infuse the beans. This method yields bold, fruity, and full-bodied coffee profiles, capturing the richness of the fruit and the essence of the Ethiopian highlands.
-                </p>
+              </p>
             </div>
             </div>
         </div>
         </div>
       </div>
       <div style={rowStyle}>
-        <div style={rightColumnStyle}>
-          <div
-              style={{
-                padding: '60px',
-                margin: '80px',
-                maxWidth: '600px',      // limit width
-                width: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',   // center title horizontally
-              }}
-          ></div>
+      <div style={rightColumnStyle}>
+        <div
+          style={{
+            padding: '60px',
+            margin: '80px',
+            maxWidth: '600px',
+            width: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            boxSizing: 'border-box',
+          }}
+        >
           <h2 style={{ marginBottom: '16px', textAlign: 'center' }}>
-            Quality Control 
+            Quality Control
           </h2>
-          <p style={{ textAlign: 'center', width: '50%', marginLeft: 190 }}>
-            Every batch of Tomoca coffee undergoes rigorous testing to ensure it meets our exacting standards for flavor, balance, and aroma. From the farm to the roastery, we meticulously evaluate each bean, guaranteeing that only the finest coffee is selected for roasting and/or export.          </p>
+          <p style={{ textAlign: 'justify', width: '100%', margin: 0 }}>
+            Every batch of Tomoca coffee undergoes rigorous testing to ensure it meets our exacting standards for flavor, balance, and aroma. From the farm to the roastery, we meticulously evaluate each bean, guaranteeing that only the finest coffee is selected for roasting and/or export.
+          </p>
         </div>
+      </div>
+
         <div style={leftColumnStyle}>
           <Image
           src={featured_4}
           alt="Heritage Image"
           fill
-          style={{ objectFit: 'cover' }}
+          style={{ objectFit: 'contain' }}
           placeholder="blur"
         />
         </div>

@@ -90,7 +90,7 @@ const blogData = [
     img: blog_5,
     date: "18 March, 2023",
     author:'John Smith',
-    title: "In the Depths of the Roast: A Love Letter to Dark Coffee",
+    title: "In the Depths of the Roast: Celebrating Tomoca’s Bar Type Dark Roast",
     tags: ["Fashion", "Lift Style","News"],
     category:'fashion',
     comments:3,
