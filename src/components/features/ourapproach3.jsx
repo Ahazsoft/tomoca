@@ -123,15 +123,17 @@ const SectionThree = () => {
             <div style={{ width: '100%' }}>
               <h4 style={{ marginBottom: '8px' }}>Flavor Profile</h4>
               <p style={{ ...paragraphStyle, textAlign: 'justify', margin: 0 }}>
-                Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee's strength to shine, making each sip smooth and satisfying.
+                Bold, intense, and rich with a deep, robust character. The Bar Type offers a full-bodied taste with notes of dark chocolate, roasted nuts, and a hint of smokiness. The reduced acidity allows the coffee&apos;s strength to shine, making each sip smooth and satisfying.
               </p>
+
               
               <div style={{ width: '100%' }}>
                 <h4 style={{ alignSelf: 'flex-start', marginTop: '48px' }}>Best Brewing Method</h4>
 
                 <p style={{ ...paragraphStyle, textAlign: 'justify', margin: 0 }}>
-                  Perfect for Espresso. The boldness of the Bar Type stands up well to the concentrated brewing process of espresso, delivering a powerful shot with a lingering finish. It's ideal for those who enjoy their coffee strong and assertive.
+                  Perfect for Espresso. The boldness of the Bar Type stands up well to the concentrated brewing process of espresso, delivering a powerful shot with a lingering finish. It&apos;s ideal for those who enjoy their coffee strong and assertive.
                 </p>
+
               </div>
             </div>
           </div>
@@ -177,8 +179,9 @@ const SectionThree = () => {
                 <h4 style={{ alignSelf: 'flex-start', marginTop: '24px' }}>Best Brewing Method</h4>
 
                 <p style={{ ...paragraphStyle, textAlign: 'justify', margin: 0 }}>
-                  Ideal for filter brewing, such as pour-over or drip coffee makers. The medium roast level preserves the beans' inherent flavors while offering a well-rounded cup that is neither too strong nor too light. It's perfect for those who enjoy a nuanced cup with a touch of sweetness.
+                  Ideal for filter brewing, such as pour-over or drip coffee makers. The medium roast level preserves the beans&apos; inherent flavors while offering a well-rounded cup that is neither too strong nor too light. It&apos;s perfect for those who enjoy a nuanced cup with a touch of sweetness.
                 </p>
+
               </div>
             </div>
           </div>
@@ -227,7 +230,7 @@ const SectionThree = () => {
                 <h4 style={{ alignSelf: 'flex-start', marginTop: '24px' }}>Best Brewing Method</h4>
 
                 <p style={{ ...paragraphStyle, textAlign: 'justify', margin: 0 }}>
-                  Specifically recommended for Turkish coffee preparation or other specialized brewing methods like AeroPress. The lighter roast is ideal for methods that highlight the coffee's subtleties, delivering a cup that is both refreshing and intricate, perfect for those who appreciate a lighter, more complex brew.
+                  Specifically recommended for Turkish coffee preparation or other specialized brewing methods like AeroPress. The lighter roast is ideal for methods that highlight the coffee&apos;s subtleties, delivering a cup that is both refreshing and intricate, perfect for those who appreciate a lighter, more complex brew.
                 </p>
               </div>
             </div>
