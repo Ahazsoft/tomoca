@@ -17,7 +17,11 @@ import comment_data from '@/data/blog-comment-data';
 
 const BlogDetailsArea = ({blog}) => {
   return (
-    <section className="tp-postbox-details-area pb-120 pt-95">
+    <section
+      className="tp-postbox-details-area pb-120 pt-95"
+      style={{ backgroundColor: '#D57140' }} // Example color
+    >
+      
       <div className="container">
         <div className="row">
           <div className="col-xl-9">
