@@ -219,8 +219,9 @@ const SectionThree = () => {
               <h4 style={{ marginBottom: '8px' }}>Flavor Profile</h4>
 
               <p style={{ ...paragraphStyle, textAlign: 'justify', margin: 0 }}>
-                Delicate, aromatic, and refined with a subtle complexity. The Turkish Type retains much of the coffee bean's original flavors, offering a bright, lively cup with floral and citrus notes. The lighter roast ensures that the natural oils within the bean remain intact, contributing to a more nuanced and aromatic experience.
+                Delicate, aromatic, and refined with a subtle complexity. The Turkish Type retains much of the coffee bean&apos;s original flavors, offering a bright, lively cup with floral and citrus notes. The lighter roast ensures that the natural oils within the bean remain intact, contributing to a more nuanced and aromatic experience.
               </p>
+
 
               <div style={{ width: '100%' }}>
                 <h4 style={{ alignSelf: 'flex-start', marginTop: '24px' }}>Best Brewing Method</h4>
@@ -247,8 +248,8 @@ const SectionThree = () => {
             marginRight: 'auto',
           }}
         >
-          Oh — and by the way, we do custom roasts.<br />
-          Coffee is personal. That’s why we offer tailored roasts that honor regional preferences, cultural tastes, and individual palates. Whatever your flavor journey looks like — we’re here to craft it with you.
+          Oh &mdash; and by the way, we do custom roasts.<br />
+          Coffee is personal. That&rsquo;s why we offer tailored roasts that honor regional preferences, cultural tastes, and individual palates. Whatever your flavor journey looks like &mdash; we&rsquo;re here to craft it with you.
         </p>
 
 
