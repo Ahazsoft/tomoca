@@ -1,5 +1,6 @@
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
+import HeaderThree from "@/layout/headers/header-3";
 import Footer from "@/layout/footers/footer";
 import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
 import Image from "next/image";
@@ -64,7 +65,8 @@ const featured_data = [
 export default function CategoryPage() {
   return (
     <Wrapper>
-      <HeaderTwo style_2={true} />
+      {/* <HeaderTwo style_2={true} /> */}
+      <HeaderThree />
 
       {/* Breadcrumb */}
       {/* <ShopBreadcrumb title="Categories" subtitle="Categories" /> */}

@@ -1,5 +1,6 @@
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
+import HeaderThree from "@/layout/headers/header-3";
 import Footer from "@/layout/footers/footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,10 +22,12 @@ const events = {
   location: 'Addis Ababa, 4 Kilo, Next to Abrhot Library',
 };
 
-export default function EventPage() {
+export default function EventPage({params}) {
+  const { id } = params;
   return (
     <Wrapper>
-      <HeaderTwo style_2={true} />
+      {/* <HeaderTwo style_2={true} /> */}
+      <HeaderThree />
 
       {/* Breadcrumb */}
       <section className="explore_shop__breadcrumb">
