@@ -14,7 +14,7 @@ const Newsletter = () => {
 <section
   className="newsletter-section text-white d-flex align-items-center justify-content-center"
   style={{
-    backgroundImage: 'url(/assets/img/product/featured/featured-5.jpg)', // 👉 Replace with your background
+    backgroundImage: 'url(/assets/img/product/featured/subscribenow.jpg)', // 👉 Replace with your background
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     minHeight: '75vh',

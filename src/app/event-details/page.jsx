@@ -1,5 +1,7 @@
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
+import HeaderThree from "@/layout/headers/header-3";
+
 import Footer from "@/layout/footers/footer";
 import Image from "next/image";
 import Link from "next/link";
@@ -13,7 +15,7 @@ export const metadata = {
 const events = {
   id: 1,
   title: 'ጊዜ በቶሞካ',
-  description: `A cultural journey at Legehar Train Station with curated music, history, and the finest Tomoca coffee.`,
+  description: `Nestled within the historic Legehar Train Station, ጊዜ በቶሞካ is an experience like no other. The sheer weight of history and culture greets you the moment you walk through the door and it only gets better from there. With curated musical experiences, a cup of Tomoca Coffee in hand, like-minded patrons, and unique themes at every event, ጊዜ በቶሞካ is designed to elevate your Tomoca experience to new heights.`,
   image: featured_4,
   buttonText: 'RSVP',
   date: 'Thursday, October 10, 2025',
@@ -24,17 +26,19 @@ const events = {
 export default function EventPage() {
   return (
     <Wrapper>
-      <HeaderTwo style_2={true} />
+      <HeaderThree />
 
       {/* Breadcrumb */}
-      <section className="explore_shop__breadcrumb">
-        <div className="container">
+      <section className="explore_shop__breadcrumb"
+      style={{ backgroundColor: '#D57140' }} 
+      >
+        {/* <div className="container">
           <h2 className="explore_shop__breadcrumb__title">{events.title}</h2>
           <ul className="explore_shop__breadcrumb__list">
             <span><Link href="/">Home</Link> •</span>
             <span>Events</span>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       {/* Event Section */}

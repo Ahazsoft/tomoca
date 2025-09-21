@@ -170,7 +170,7 @@ const BeautyFeatured = () => {
     <div className="row justify-content-end mb-55">
       <div className="col-lg-6 col-md-4 text-md-end text-start">
         <div className="tp-category-more-3">
-          <Link href="#" className="tp-btn">
+          <Link href="/explore-shop" className="tp-btn">
             Explore Shop <ArrowRightSmTwo />
           </Link>
         </div>

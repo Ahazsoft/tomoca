@@ -1,5 +1,6 @@
 import Wrapper from "@/layout/wrapper";
 import HeaderTwo from "@/layout/headers/header-2";
+import HeaderThree from "@/layout/headers/header-3";
 import Footer from "@/layout/footers/footer";
 import ShopBreadcrumb from "@/components/breadcrumb/shop-breadcrumb";
 import Image from "next/image";
@@ -64,19 +65,21 @@ const featured_data = [
 export default function CategoryPage() {
   return (
     <Wrapper>
-      <HeaderTwo style_2={true} />
+      <HeaderThree  />
 
       {/* Breadcrumb */}
       {/* <ShopBreadcrumb title="Categories" subtitle="Categories" /> */}
 
-      <section className="explore_shop__breadcrumb">
-        <div className="container">
+      <section className="explore_shop__breadcrumb"
+      style={{ backgroundColor: '#D57140' }} // Example color
+      >
+        {/* <div className="container">
           <h2 className="explore_shop__breadcrumb__title">Categories</h2>
           <ul className="explore_shop__breadcrumb__list">
             <span><Link href="/">Home</Link> •</span>
             <span>Categories</span>
           </ul>
-        </div>
+        </div> */}
       </section>
 
       {/* === Top Promo Section === */}
@@ -122,7 +125,7 @@ export default function CategoryPage() {
       {/* Newsletter Section */}
       <div className="newsletter">
         <div className="container newsletter__content">
-          <h3>Subscribe to our Newsletter</h3>
+          <h3>Subscribe to Our Newsletter</h3>
           <p>Get updates about our latest products and offers.</p>
           <form className="newsletter__form">
             <input type="email" placeholder="Enter your email" required />

@@ -200,7 +200,7 @@ const Events = () => {
                           {event.description}
                         </p>
                         <Link
-                          href="#"
+                          href="/event-details"
                           className="tp-btn"
                           style={{
                             backgroundColor: event.textColor,

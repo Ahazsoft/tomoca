@@ -9,7 +9,7 @@ import slider_bg_3 from "@assets/img/slider/3/slider-3.jpg";
 
 // Direct Dropbox link for video
 const videoURL = "https://dl.dropboxusercontent.com/scl/fi/463ecqzeih4ug5fe8g4m8/slider-2-fixed.mp4?rlkey=trylec7ysg3vkpd7gje54znm4";
-const slider_bg_2 = "/assets/img/product/featured/featured-5.jpg"
+const slider_bg_2 = "/assets/img/product/featured/aboutus.jpg"
 
 // Slider settings
 const slider_setting = {

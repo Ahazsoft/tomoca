@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 
 import featured_1 from '@assets/img/product/featured/featured-1.png';
-import featured_2 from '@assets/img/product/featured/3.jpg';
-import featured_3 from '@assets/img/product/featured/4.jpg';
+import featured_2 from '@assets/img/product/featured/featured-2.png';
+import featured_3 from '@assets/img/product/featured/featured-3.png';
 import featured_4 from '@assets/img/product/featured/featured-4.png';
 const About = () => {
   const rowStyle = {
