@@ -11,15 +11,14 @@ import featured_4 from '@assets/img/product/featured/GizeBetomoca.jpg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-
 const StoreLocation = () => {
   return (
     <div style={styles.container}>
       <h1 style={styles.header}>Our Store</h1>
       <p style={styles.description}>
-        Visit our store at the heart of the city. We're open every day from 8 AM to 9 PM!
+        Visit our store at the heart of the city. We&apos;re open every day from 8 AM to 9 PM!
       </p>
-      
+
       {/* Google Map Embed */}
       <div style={styles.mapContainer}>
         <iframe
