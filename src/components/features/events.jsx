@@ -4,10 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Slider from 'react-slick';
 
-import featured_1 from '@assets/img/product/featured/featured-1.png';
-import featured_2 from '@assets/img/product/featured/featured-2.png';
-import featured_3 from '@assets/img/product/featured/featured-3.png';
-import featured_4 from '@assets/img/product/featured/GizeBetomoca.jpg';
+import featured_1 from '@assets/img/events/EdgarDegas.jpg';
+import featured_2 from '@assets/img/events/CoffeeforCare.jpg';
+import featured_3 from '@assets/img/events/GizebeTomoca.jpg';
+import featured_4 from '@assets/img/events/SteamandStitch.jpg';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -15,32 +15,46 @@ const events = [
   {
     id: 1,
     // title: 'ጊዜ በቶሞካ',
-    // description: `A cultural journey at Legehar Train Station with curated music, history, and the finest Tomoca coffee.`,
-    image: featured_4,
+    // description: 'A cultural journey at Legehar Train Station with curated music, history, and the finest Tomoca coffee.',
+    image: featured_1,
+    color: '#CB9458',
+    textColor: '#3B2314',
+    buttonBgColor: '#3B2314',
     buttonText: 'Explore',
-    color: '#CB9458',      // Light Roast
-    textColor: '#3B2314',  // Complementary dark brown
-    buttonBgColor: '#3B2314', // For left button background
+    link: '/events/gize-betomoca', // 
   },
   {
     id: 2,
     // title: 'Piassa Stories',
-    // description: `Jazz-filled nights and heritage tales from Addis’ iconic Piassa district.`,
-    image: featured_4,
-    buttonText: 'Reserve Spot',
-    color: '#8D5534',      // Medium Roast
-    textColor: '#FFF4E6',  // Complementary cream
+    // description: 'Jazz-filled nights and heritage tales from Addis’ iconic Piassa district.',
+    image: featured_2,
+    color: '#8D5534',
+    textColor: '#FFF4E6',
     buttonBgColor: '#FFF4E6',
+    buttonText: 'Reserve Spot',
+    link: '/events/piassa-stories', // 
   },
   {
     id: 3,
     // title: 'Coffee & Culture',
-    // description: `Tomoca’s finest brews paired with poetry and music. A warm blend of aroma and artistry.`,
-    image: featured_4,
-    buttonText: 'Join Now',
-    color: '#461C12',      // Dark Roast
-    textColor: '#F3E5DC',  // Complementary beige
+    // description: 'Tomoca’s finest brews paired with poetry and music. A warm blend of aroma and artistry.',
+    image: featured_3,
+    color: '#461C12',
+    textColor: '#F3E5DC',
     buttonBgColor: '#F3E5DC',
+    buttonText: 'Join Now',
+    link: '/event-details', // 
+  },
+  {
+    id: 4,
+    // title: 'Steam & Stitch',
+    // description: 'Where espresso meets art—explore Ethiopia’s young creative minds in motion.',
+    image: featured_4,
+    color: '#8D5534',
+    textColor: '#FFF4E6',
+    buttonBgColor: '#FFF4E6',
+    buttonText: 'Reserve Spot',
+    link: '/events/steam-stitch', // 
   },
 ];
 
@@ -138,87 +152,72 @@ const Events = () => {
             <Slider ref={sliderRef} {...settings}>
               {events.map((event, index) => (
                 <div key={event.id} className="carousel-item-wrapper">
-                  <div
-                    className={`event-card ${index === activeSlide ? 'active' : 'inactive'}`}
-                    style={{
-                      position: 'relative',
-                      width: '100%',
-                      paddingTop: '120%', // square & bigger
-                      borderRadius: '12px',
-                      overflow: 'hidden',
-                      boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
-                      backgroundColor: '#000',
-                    }}
-                  >
-                    {/* Background Image */}
-                    <Image
-                      src={event.image}
-                      alt={event.title}
-                      fill
-                      style={{
-                        objectFit: 'cover',
-                        opacity: index === activeSlide ? 1 : 0.3,
-                        transition: 'opacity 0.3s ease-in-out',
-                      }}
-                    />
-
-                    {/* Overlay Content */}
-                    <div
-                      style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        padding: '20px',
-                        display: 'flex',
-                        flexDirection: 'column',
-                        justifyContent: 'flex-end',
-                        color: event.textColor,
-                        background: `linear-gradient(to top, ${event.color}cc, transparent)`,
-                        zIndex: 2,
-                      }}
-                    >
-                      <div style={{ marginTop: 'auto' }}>
-                        <h3
+                  <Link href={event.link}>
+                      <div
+                        className={`event-card ${index === activeSlide ? 'active' : 'inactive'}`}
+                        style={{
+                          position: 'relative',
+                          width: '100%',
+                          paddingTop: '120%',
+                          borderRadius: '12px',
+                          overflow: 'hidden',
+                          boxShadow: '0 6px 20px rgba(0,0,0,0.15)',
+                          backgroundColor: '#000',
+                        }}
+                      >
+                        <Image
+                          src={event.image}
+                          // alt={event.title}
+                          fill
                           style={{
-                            fontSize: '20px',
-                            fontWeight: 'bold',
-                            marginBottom: '10px',
-                            minHeight: '48px',
+                            objectFit: 'cover',
+                            opacity: index === activeSlide ? 1 : 0.3,
+                            transition: 'opacity 0.3s ease-in-out',
+                          }}
+                        />
+                        <div
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            padding: '20px',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            justifyContent: 'flex-end',
+                            color: event.textColor,
+                            background: `linear-gradient(to top, ${event.color}cc, transparent)`,
+                            zIndex: 2,
                           }}
                         >
-                          {event.title}
-                        </h3>
-                        <p
-                          style={{
-                            fontSize: '0.95rem',
-                            marginBottom: '15px',
-                            minHeight: '60px',
-                          }}
-                        >
-                          {event.description}
-                        </p>
-                        <Link
-                          href="/event-details"
-                          className="tp-btn"
-                          style={{
-                            backgroundColor: event.textColor,
-                            color: event.color,
-                            padding: '8px 16px',
-                            borderRadius: '4px',
-                            fontWeight: 'bold',
-                            width: 'fit-content',
-                            transition: 'background-color 0.3s ease-in-out',
-                          }}
-                        >
-                          {event.buttonText}
-                        </Link>
+                          <div style={{ marginTop: 'auto' }}>
+                            <h3
+                              style={{
+                                fontSize: '20px',
+                                fontWeight: 'bold',
+                                marginBottom: '10px',
+                                minHeight: '48px',
+                              }}
+                            >
+                              {event.title}
+                            </h3>
+                            <p
+                              style={{
+                                fontSize: '0.95rem',
+                                marginBottom: '15px',
+                                minHeight: '60px',
+                              }}
+                            >
+                              {/* {event.description} */}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                  </Link>
                 </div>
               ))}
+
             </Slider>
           </div>
         </div>

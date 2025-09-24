@@ -225,7 +225,7 @@ overflow: hidden !important;
 }
 
 .footer-section{
-background-color: #D38760 !important;
+background-color: #C66335 !important;
 color: white !important;
 }
 
@@ -426,8 +426,9 @@ color: white !important;
 
 
 .tp-btn {
-  // background-color: #C66335 !important;
+  // background-color: #D75C20 !important;
   background-color: transparent !important;
+  // color: #fff !important;
   color: #C66335 !important;
   border-color: #C66335 !important;
   border: none;
@@ -441,8 +442,9 @@ color: white !important;
   font-weight: 1000 !important;
 
   &:hover {
-    background-color: darken(#C66335, 10%);
-    color: #fff;
+    // background-color: darken(#C66335, 10%);
+    background-color: #D75C20 !important;
+    color: #fff !important;
   }
 }
 

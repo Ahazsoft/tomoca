@@ -14,8 +14,8 @@ const featured_data = [
   {
     id: 1,
     img: featured_1,
-    title: <>200 grm Tin Can</>,
-    // subtitle: 'Tin Can',
+    title: <>Tin Can Ground Coffee</>,
+    subtitle: '200 grm',
     save: 72,
     bgColor: '#D35F44',
     label: 'New',
@@ -24,8 +24,8 @@ const featured_data = [
   {
     id: 2,
     img: featured_2,
-    title: <>100 grm</>,
-    // subtitle: 'Lorum Ipsum',
+    title: <>Beans / Ground Coffee</>,
+    subtitle: '100 grm',
     save: 98,
     bgColor: '#DB6C2F',
     label: 'Limited Release',
@@ -34,8 +34,8 @@ const featured_data = [
   {
     id: 3,
     img: featured_3,
-    title: <>375 grm</>,
-    // subtitle: 'Lorum Ipsum',
+    title: <>Beans / Ground Coffee</>,
+    subtitle: '375 grm',
     save: 133,
     bgColor: '#E14829',
     label: 'Best Seller',
@@ -44,8 +44,8 @@ const featured_data = [
   {
     id: 4,
     img: featured_4,
-    title: <>500 grm</>,
-    // subtitle: 'Lorum Ipsum',
+    title: <>Bean / Ground Coffee</>,
+    subtitle: '500 grm',
     save: 110,
     bgColor: '#D35F44',
     label: 'Best Seller',

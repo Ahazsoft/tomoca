@@ -12,6 +12,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Merriweather';
+  src: url('/assets/fonts/Merriweather/Merriweather-VariableFont_opsz,wdth,wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 body, .custom-body-font {
   font-family: 'Anton', sans-serif !important;

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 // internal
 import logo from '@assets/img/logo/logo.svg';
-import pay from '@assets/img/footer/footer-pay.png';
+import pay from '@assets/img/footer/footer-pay-5.png';
 import social_data from '@/data/social-data';
 import { Email, Location } from '@/svg';
 
@@ -38,11 +38,11 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <h4 className="tp-footer-widget-title">Tomocca Coffee</h4>
                   <div className="tp-footer-widget-content">
                     <ul>
-                      <li><a href="#">Our Story</a></li>
-                      <li><a href="#">Tomoca Family</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Our Approach</a></li>
                       <li><a href="#">Events</a></li>
-                      <li><a href="#">Blogs</a></li>
-                      <li><a href="#">Game</a></li>
+                      <li><a href="#">Blog</a></li>
+                      {/* <li><a href="#">Game</a></li> */}
                       {/* <li><a href="#">Returns</a></li> */}
                     </ul>
                   </div>
@@ -53,11 +53,11 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <h4 className="tp-footer-widget-title">Information</h4>
                   <div className="tp-footer-widget-content">
                     <ul>
-                      <li><a href="#">Our Story</a></li>
+                      {/* <li><a href="#">Our Story</a></li> */}
                       <li><a href="#">Careers</a></li>
                       <li><a href="#">Privacy Policy</a></li>
                       <li><a href="#">Terms & Conditions</a></li>
-                      <li><a href="#">Latest News</a></li>
+                      {/* <li><a href="#">Latest News</a></li> */}
                       <li><a href="#">Contact Us</a></li>
                     </ul>
                   </div>
@@ -68,7 +68,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <h4 className="tp-footer-widget-title">Talk To Us</h4>
                   <div className="tp-footer-widget-content">
                     <div className="tp-footer-talk mb-20">
-                      <span>Got Questions? Call us</span>
+                      {/* <span>Got Questions? Call us</span> */}
                       <h4><a href="tel:670-413-90-762">+251-11419076</a></h4>
                     </div>
                     <div className="tp-footer-contact">

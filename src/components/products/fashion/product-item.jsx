@@ -111,12 +111,12 @@ const ProductItem = ({ product, style_2 = false }) => {
       </div>
       <div className="tp-product-content-2 pt-15">
         <div className="tp-product-tag-2">
-          {tags.map((t, i) => (
+          {/* {tags.map((t, i) => (
             <a key={i} href="#">
               {t}
               {i < tags.length - 1 && ","}
             </a>
-          ))}
+          ))} */}
         </div>
         <h3 className="tp-product-title-2">
           <Link href={`/product-details/${_id}`}>{title}</Link>

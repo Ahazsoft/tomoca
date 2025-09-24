@@ -82,7 +82,7 @@ const StoreLocater = () => {
         <div className="spacer" style={{ height: '100px' }}></div>
 
         {/* ✅ Bottom Global Button (unchanged) */}
-        <div className="row mb-55">
+        {/* <div className="row mb-55">
           <div className="col-12 text-center">
             <h3 className="tp-locate-store-title text-2xl font-semibold mb-4">Looking for a store near you?</h3>
             <div className="mt-4 tp-category-more-3">
@@ -91,7 +91,7 @@ const StoreLocater = () => {
                   </Link>
                 </div>
           </div>
-        </div>
+        </div> */}
 
       </div>
     </section>
