@@ -171,6 +171,7 @@ const Events = () => {
                           fill
                           style={{
                             objectFit: 'cover',
+                            // objectPosition: 'center center', 
                             opacity: index === activeSlide ? 1 : 0.3,
                             transition: 'opacity 0.3s ease-in-out',
                           }}

@@ -18,7 +18,7 @@ const featured_data = [
     subtitle: '200 grm',
     save: 72,
     bgColor: '#D35F44',
-    label: 'New',
+    label: 'Limited Release',
     labelColor: '#DB6C2F',
   },
   {
@@ -28,8 +28,8 @@ const featured_data = [
     subtitle: '100 grm',
     save: 98,
     bgColor: '#DB6C2F',
-    label: 'Limited Release',
-    labelColor: '#E14829',
+    // label: 'New Release',
+    // labelColor: '#E14829',
   },
   {
     id: 3,
@@ -38,8 +38,8 @@ const featured_data = [
     subtitle: '375 grm',
     save: 133,
     bgColor: '#E14829',
-    label: 'Best Seller',
-    labelColor: '#D35F44',
+    // label: 'Best Seller',
+    // labelColor: '#D35F44',
   },
   {
     id: 4,
@@ -170,7 +170,7 @@ const BeautyFeatured = () => {
     <div className="row justify-content-end mb-55">
       <div className="col-lg-6 col-md-4 text-md-end text-start">
         <div className="tp-category-more-3">
-          <Link href="/explore-shop" className="tp-btn">
+          <Link href="/shop" className="tp-btn">
             Explore Shop <ArrowRightSmTwo />
           </Link>
         </div>

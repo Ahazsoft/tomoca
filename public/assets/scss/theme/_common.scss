@@ -58,22 +58,21 @@
     width: 100%;
 }
 .tp-slider-title-3 {
-  font-weight: 400;
-  font-size: 80px !important;
+  font-weight: 600 !important;
+  font-size: 70px !important;
   line-height: 1.06;
-  margin: 0 auto 22px; /* top auto bottom */
+  margin-bottom: 22px;
   color: var(--tp-common-white);
   animation-delay: 0.3s;
   animation-duration: 1s;
-  text-align: center; /* good idea to include */
-  display: block; /* if not already */
 }
 
 .tp-slider-content-3 > span {
   font-family: var(--tp-ff-charm);
   font-weight: 400;
   font-size: 30px;
-  color: var(--tp-common-white);
+  // color: var(--tp-common-white);
+  color: #D75C20;
   display: inline-block;
   animation-delay: 0.1s;
   animation-duration: 1s;
@@ -85,7 +84,7 @@
 
 .logo-light {
     display: block; /* in case it was hidden before */
-    width: 10%;   /* adjust as needed */
+    width: 7%;   /* adjust as needed */
     height: auto;
 	// margin-top: 10%; /* adjust this value to move it more or less */
 	margin: 0% auto 0 auto; /* top margin 10%, auto left and right to center */
@@ -94,7 +93,7 @@
 
 .logo-dark {
     display: block; /* in case it was hidden before */
-    width: 10%;   /* adjust as needed */
+    width: 7%;   /* adjust as needed */
     height: auto;
 	// margin-top: 10%; /* adjust this value to move it more or less */
 	margin: 0% auto 0 auto; /* top margin 10%, auto left and right to center */

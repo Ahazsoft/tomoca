@@ -91,7 +91,7 @@ const AboutBanner = () => {
                     <h3 className="tp-slider-title-3">
                       A Legacy Brewed in Ethiopia
                     </h3>
-                    <span style={{ lineHeight: '1.2', fontSize:'24px' }}>
+                    <span style={{ lineHeight: '1.2', fontSize:'24px', color: '#fff !important' }}>
                       When you experience Tomoca Coffee, you’re not just tasting coffee, 
                       you’re tasting Ethiopia’s soul. TOMOCA has been there when our nation’s 
                       best sipped a cup of coffee and went on to change the flow of history, 

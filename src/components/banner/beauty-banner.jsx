@@ -88,9 +88,13 @@ const BeautyBanner = () => {
                 <div className="col-xl-6 col-lg-6 col-md-8">
                   <div className="tp-slider-content-3">
                     <h3 className="tp-slider-title-3">
-                      Perfecting Coffee Roasting Since 1953
+                      PERFECTING COFFEE ROASTING 
                     </h3>
-                    <span>From Ethiopia to the World</span>
+                    <span className="bullet-text">
+                      <span style={{ color: '#D75C20' }} className="bullet">&bull;</span>
+                      <span style={{ color: '#D75C20' }}>Since 1953</span>
+                      <span style={{ color: '#D75C20' }} className="bullet">&bull;</span>
+                    </span>
 
                     <div className="tp-slider-feature-3 d-flex flex-wrap align-items-center p-relative z-index-1 mb-15">
                       {/* Feature items can go here */}

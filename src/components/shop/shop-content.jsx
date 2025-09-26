@@ -46,13 +46,13 @@ const ShopContent = ({all_products,products,otherProps,shop_right,hidden_sidebar
                   {/* status */}
                   <StatusFilter setCurrPage={setCurrPage} />
                   {/* categories */}
-                  <CategoryFilter setCurrPage={setCurrPage} />
+                  {/* <CategoryFilter setCurrPage={setCurrPage} /> */}
                   {/* color */}
-                  <ColorFilter setCurrPage={setCurrPage} />
+                  {/* <ColorFilter setCurrPage={setCurrPage} /> */}
                   {/* product rating */}
-                  <TopRatedProducts />
+                  {/* <TopRatedProducts /> */}
                   {/* brand */}
-                  <ProductBrand setCurrPage={setCurrPage} />
+                  {/* <ProductBrand setCurrPage={setCurrPage} /> */}
                   {/* reset filter */}
                   <ResetButton setPriceValues={setPriceValue} maxPrice={maxPrice} />
                 </div>

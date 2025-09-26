@@ -25,7 +25,7 @@ const Newsletter = () => {
 >
   <div
     style={{
-      backgroundColor: 'rgba(0, 0, 0, 0.5)',
+      // backgroundColor: 'rgba(0, 0, 0, 0.5)',
       padding: '3rem 2rem',
       borderRadius: '12px',
       maxWidth: '700px',
@@ -41,7 +41,7 @@ const Newsletter = () => {
         color: '#fff',
       }}
     >
-      Good Days Follow Great Coffee
+      Good Days Follow Great Coffee.
     </h2>
 
     {/* Subscribe form */}
@@ -65,13 +65,13 @@ const Newsletter = () => {
         style={{
           padding: '0.5rem 0.75rem',
           fontSize: '0.9rem',
-          borderRadius: '4px',
+          // borderRadius: '4px',
           border: 'none',
           outline: 'none',
           width: '220px',
         }}
       />
-      <button
+      {/* <button
         type="submit"
         style={{
           padding: '0.5rem 1rem',
@@ -85,7 +85,10 @@ const Newsletter = () => {
         }}
       >
         Subscribe
-      </button>
+      </button> */}
+      <Link href="#" className="tp-btn">
+        Subscribe
+      </Link>
     </form>
   </div>
 </section>

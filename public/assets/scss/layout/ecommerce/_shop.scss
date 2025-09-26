@@ -78,10 +78,12 @@
                     line-height: 38px;
                     text-align: center;
                     font-size: 18px;
-                    color: #818487;
+                    // color: #818487;
+                    color: #000;
                     border: 1px solid rgba($color: $black, $alpha: .1);
                     border-radius: 0;
                     margin-right: 6px;
+                    background-color:#D75C20;
                     & svg{
                         @extend %tp-svg-y-2;
                     }
@@ -109,6 +111,7 @@
     .tp-product-tag-2 a:hover,
     .tp-product-title-2 a:hover {
         color: var(--tp-theme-primary);
+        
     }
     .tp-product-tag-2 a::after {
         background-color: var(--tp-theme-primary);

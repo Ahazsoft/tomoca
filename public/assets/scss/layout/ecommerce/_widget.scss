@@ -54,14 +54,32 @@
                 }
             }
             & .tp-shop-widget-filter-btn{
-                font-weight: 400;
-                font-size: 14px;             
-                color: var(--tp-common-black);
-                background-color: #F5F5F5;
+                // font-weight: 400;
+                // font-size: 14px;             
+                // color: var(--tp-common-black);
+                // background-color: #F5F5F5;
+
+                background-color: transparent !important;
+                border: 1px solid var(--tp-common-black);
+                // color: #fff !important;
+                color: #C66335 !important;
+                border-color: #C66335 !important;
+                // border: none;
+                // border-radius: 32px !important; // adjust radius as needed
+                padding: 12px 24px !important;
+                font-weight: 500 !important;
+                display: inline-block !important;
+                text-align: center !important;
+                transition: all 0.3s ease !important;
+                font-family: "Public Sans" !important;
+                font-weight: 1000 !important;
+                
                 padding: 2px 21px;
                 &:hover{
-                    color: var(--tp-common-white);
-                    background-color: var(--tp-common-black);
+                    // color: var(--tp-common-white);
+                    // background-color: var(--tp-common-black);
+                    background-color: #D75C20 !important;
+                    color: #fff !important;
                 }
             }
         }

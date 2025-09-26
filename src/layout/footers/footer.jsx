@@ -3,9 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 // internal
 import logo from '@assets/img/logo/logo.svg';
-import pay from '@assets/img/footer/footer-pay-5.png';
+import pay1 from '@assets/img/footer/footer-pay-5.png';
+import pay2 from '@assets/img/footer/footer-pay-5.png';
 import social_data from '@/data/social-data';
-import { Email, Location } from '@/svg';
+import { Email, Location, Phone } from '@/svg';
 
 const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
   return (
@@ -67,11 +68,21 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                 <div className="tp-footer-widget footer-col-4 mb-50">
                   <h4 className="tp-footer-widget-title">Talk To Us</h4>
                   <div className="tp-footer-widget-content">
-                    <div className="tp-footer-talk mb-20">
+                    {/* <div className="tp-footer-talk mb-20"> */}
                       {/* <span>Got Questions? Call us</span> */}
-                      <h4><a href="tel:670-413-90-762">+251-11419076</a></h4>
-                    </div>
+                      {/* <h4><a href="tel:670-413-90-762">+251-11419076</a></h4> */}
+                    {/* </div> */}
                     <div className="tp-footer-contact">
+                      <div className="tp-footer-contact-item d-flex align-items-start">
+                        <div className="tp-footer-contact-icon">
+                          <span>
+                            <Phone />
+                          </span>
+                        </div>
+                        <div className="tp-footer-contact-content">
+                          <p><a href="mailto:shofy@support.com">+251-11419076</a></p>
+                        </div>
+                      </div>
                       <div className="tp-footer-contact-item d-flex align-items-start">
                         <div className="tp-footer-contact-icon">
                           <span>
@@ -89,7 +100,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                           </span>
                         </div>
                         <div className="tp-footer-contact-content">
-                          <p><a href="https://www.google.com/maps/place/Sleepy+Hollow+Rd,+Gouverneur,+NY+13642,+USA/@44.3304966,-75.4552367,17z/data=!3m1!4b1!4m6!3m5!1s0x4cccddac8972c5eb:0x56286024afff537a!8m2!3d44.3304928!4d-75.453048!16s%2Fg%2F1tdsjdj4" target="_blank">Bole <br /> Addis Ababa , Ethiopia</a></p>
+                          <p><a href="https://www.google.com/maps/place/Sleepy+Hollow+Rd,+Gouverneur,+NY+13642,+USA/@44.3304966,-75.4552367,17z/data=!3m1!4b1!4m6!3m5!1s0x4cccddac8972c5eb:0x56286024afff537a!8m2!3d44.3304928!4d-75.453048!16s%2Fg%2F1tdsjdj4" target="_blank">Bole, Addis Ababa, Ethiopia</a></p>
                         </div>
                       </div>
                     </div>
@@ -113,7 +124,7 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                 <div className="col-md-6">
                   <div className="tp-footer-payment text-md-end">
                     <p>
-                      <Image src={pay} alt="pay" />
+                      <Image src={pay1} alt="pay" />
                     </p>
                   </div>
                 </div>

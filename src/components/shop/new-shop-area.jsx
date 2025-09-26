@@ -10,6 +10,12 @@ import featured_1 from '@assets/img/product/featured/1.jpg';
 import featured_2 from '@assets/img/product/featured/2.jpg';
 import featured_3 from '@assets/img/product/featured/3.jpg';
 import featured_4 from '@assets/img/product/featured/4.jpg';
+import featured_5 from '@assets/img/product/featured/5.jpg';
+import featured_6 from '@assets/img/product/featured/6.jpg';
+import featured_7 from '@assets/img/product/featured/7.jpg';
+import featured_8 from '@assets/img/product/featured/8.jpg';
+import featured_9 from '@assets/img/product/featured/9.jpg';
+
 
 // Local product data (instead of fetching from backend)
 const allProducts = [
@@ -84,6 +90,101 @@ const allProducts = [
     imageURLs: [
       {
         url: featured_4,
+        color: { name: "dark brown" }
+      }
+    ],
+    createdAt: "2025-09-01T00:00:00Z"
+  },
+  {
+    id: 5,
+    img: featured_5,
+    title: "Tote Bag",
+    subtitle: "500 grm",
+    price: 110,
+    discount: 15,
+    status: "in-stock",
+    parent: "coffee",
+    children: "beans",
+    brand: { name: "Tomoca" },
+    imageURLs: [
+      {
+        url: featured_5,
+        color: { name: "dark brown" }
+      }
+    ],
+    createdAt: "2025-09-01T00:00:00Z"
+  },
+  {
+    id: 6,
+    img: featured_6,
+    title: "TShirt",
+    subtitle: "500 grm",
+    price: 110,
+    discount: 15,
+    status: "in-stock",
+    parent: "coffee",
+    children: "beans",
+    brand: { name: "Tomoca" },
+    imageURLs: [
+      {
+        url: featured_6,
+        color: { name: "dark brown" }
+      }
+    ],
+    createdAt: "2025-09-01T00:00:00Z"
+  },
+  {
+    id: 7,
+    img: featured_7,
+    title: "Bialetti",
+    subtitle: "500 grm",
+    price: 110,
+    discount: 15,
+    status: "in-stock",
+    parent: "coffee",
+    children: "beans",
+    brand: { name: "Tomoca" },
+    imageURLs: [
+      {
+        url: featured_7,
+        color: { name: "dark brown" }
+      }
+    ],
+    createdAt: "2025-09-01T00:00:00Z"
+  },
+  {
+    id: 8,
+    img: featured_8,
+    title: "Tote Bag #1",
+    subtitle: "500 grm",
+    price: 110,
+    discount: 15,
+    status: "in-stock",
+    parent: "coffee",
+    children: "beans",
+    brand: { name: "Tomoca" },
+    imageURLs: [
+      {
+        url: featured_8,
+        color: { name: "dark brown" }
+      }
+    ],
+    createdAt: "2025-09-01T00:00:00Z"
+  },
+    {
+    id: 9,
+    img: featured_9,
+    title: "Tote Bag #2",
+    subtitle: "500 grm",
+    price: 110,
+    discount: 15,
+    status: "in-stock",
+    parent: "coffee",
+    children: "beans",
+    brand: { name: "Tomoca" },
+    imageURLs: [
+      {
+        url: featured_9,
         color: { name: "dark brown" }
       }
     ],
