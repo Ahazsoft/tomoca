@@ -48,7 +48,8 @@ const ProductItem = ({ product, style_2 = false }) => {
   return (
     <div className={`tp-product-item-2 ${style_2 ? "" : "mb-40"}`}>
       <div className="tp-product-thumb-2 p-relative z-index-1 fix">
-        <Link href={`/product-details/${_id}`}>
+        {/* <Link href={`/product-details/${_id}`}> */}
+        <Link href={`/product-details/${product.id}`}>
           <Image
             src={img}
             alt="product img"

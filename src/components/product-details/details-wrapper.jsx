@@ -48,7 +48,9 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
   return (
     <div className="tp-product-details-wrapper">
       <div className="tp-product-details-category">
-        <span>{category.name}</span>
+        {/* <span>{category.name}</span> */}
+        <span>{category?.name || productItem?.parent || "Uncategorized"}</span>
+
       </div>
       <h3 className="tp-product-details-title">{title}</h3>
 
@@ -66,9 +68,17 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
           </div>
         </div>
       </div>
-      <p>{textMore ? description : `${description.substring(0, 100)}...`}
+      {/* <p>{textMore ? description : `${description.substring(0, 100)}...`}
+        <span onClick={() => setTextMore(!textMore)}>{textMore ? 'See less' : 'See more'}</span>
+      </p> */}
+
+      <p>
+        {textMore
+          ? (description || "No description available.")
+          : `${(description || "No description available.").substring(0, 100)}...`}
         <span onClick={() => setTextMore(!textMore)}>{textMore ? 'See less' : 'See more'}</span>
       </p>
+
 
       {/* price */}
       <div className="tp-product-details-price-wrapper mb-20">
@@ -86,7 +96,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
 
       {/* variations */}
       {imageURLs.some(item => item?.color && item?.color?.name) && <div className="tp-product-details-variation">
-        <div className="tp-product-details-variation-item">
+        {/* <div className="tp-product-details-variation-item">
           <h4 className="tp-product-details-variation-title">Color :</h4>
           <div className="tp-product-details-variation-list">
             {imageURLs.map((item, i) => (
@@ -104,7 +114,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
               </button>
             ))}
           </div>
-        </div>
+        </div> */}
       </div>}
 
       {/* if ProductDetailsCountdown true start */}
@@ -119,31 +129,56 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
           <ProductQuantity />
           {/* product quantity */}
           <div className="tp-product-details-add-to-cart mb-15 w-100">
-            <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-product-details-add-to-cart-btn w-100">Add To Cart</button>
+            <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-btn w-100">Add To Cart</button>
           </div>
         </div>
         <Link href="/cart" onClick={() => dispatch(handleModalClose())}>
-          <button className="tp-product-details-buy-now-btn w-100">Buy Now</button>
+          <button className="tp-btn w-100">Buy Now</button>
         </Link>
       </div>
       {/* product-details-action-sm start */}
-      <div className="tp-product-details-action-sm">
-        <button disabled={status === 'out-of-stock'} onClick={() => handleCompareProduct(productItem)} type="button" className="tp-product-details-action-sm-btn">
+      <div className="tp-product-details-action-sm" style={{ color: 'black' }}>
+        <button
+          disabled={status === 'out-of-stock'}
+          onClick={() => handleCompareProduct(productItem)}
+          type="button"
+          className="tp-product-details-action-sm-btn"
+          style={{ color: 'black', WebkitTextFillColor: 'black' }}
+        >
           <CompareTwo />
           Compare
         </button>
-        <button disabled={status === 'out-of-stock'} onClick={() => handleWishlistProduct(productItem)} type="button" className="tp-product-details-action-sm-btn">
+        <button
+          disabled={status === 'out-of-stock'}
+          onClick={() => handleWishlistProduct(productItem)}
+          type="button"
+          className="tp-product-details-action-sm-btn"
+          style={{ color: 'black', WebkitTextFillColor: 'black' }}
+        >
           <WishlistTwo />
           Add Wishlist
         </button>
-        <button type="button" className="tp-product-details-action-sm-btn">
+        <button
+          type="button"
+          className="tp-product-details-action-sm-btn"
+          style={{ color: 'black', WebkitTextFillColor: 'black' }}
+        >
           <AskQuestion />
           Ask a question
         </button>
       </div>
+
       {/* product-details-action-sm end */}
 
-      {detailsBottom && <DetailsBottomInfo category={category?.name} sku={sku} tag={tags[0]} />}
+      {/* {detailsBottom && <DetailsBottomInfo category={category?.name} sku={sku} tag={tags[0]} />} */}
+      {detailsBottom && 
+      <DetailsBottomInfo
+        category={category?.name || productItem?.parent || "Uncategorized"}
+        sku={sku || "N/A"}
+        tag={tags?.[0] || "No tag"}
+      />
+      }
+
     </div>
   );
 };

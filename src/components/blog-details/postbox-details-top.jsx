@@ -15,10 +15,10 @@ const PostboxDetailsTop = ({blog}) => {
         {title}
       </h3>
       <div className="tp-postbox-details-meta mb-50">
-        <span data-meta="author">
+        {/* <span data-meta="author">
           <UserTwo />
           By <a href="#">{" "}{author}</a>
-        </span>
+        </span> */}
         <span>
           <Date />
           {" "}{date}

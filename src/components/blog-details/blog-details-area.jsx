@@ -19,7 +19,7 @@ const BlogDetailsArea = ({blog}) => {
   return (
     <section
       className="tp-postbox-details-area pb-120 pt-95"
-      style={{ backgroundColor: '#D57140' }} // Example color
+      // style={{ backgroundColor: '#D57140' }} // Example color
     >
       
       <div className="container">
@@ -66,6 +66,7 @@ const BlogDetailsArea = ({blog}) => {
                       <Image className="tp-postbox-details-quote-shape-1" src={shape_line} alt="shape" />
                       <Image className="tp-postbox-details-quote-shape-2" src={shape_line_2} alt="shape" />
                     </div>
+                    
                     <p>Go dark. Go bold. Go Bar.</p>
                     <cite></cite>
                   </blockquote>
@@ -101,7 +102,7 @@ const BlogDetailsArea = ({blog}) => {
                 {/* PostboxDetailsNav */}
 
                 {/* author details start */}
-                <BlogDetailsAuthor />
+                {/* <BlogDetailsAuthor /> */}
                 {/* author details end */}
 
                 <div className="tp-postbox-details-comment-wrapper">

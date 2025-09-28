@@ -41,7 +41,7 @@ const BlogPostCommentForm = () => {
           </div>
         </div>
         <div className="tp-postbox-details-input-box">
-          <button className="tp-postbox-details-input-btn" type="submit">Post Comment</button>
+          <button className="tp-btn" type="submit">Post Comment</button>
         </div>
       </div>
     </form>

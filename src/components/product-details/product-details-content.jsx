@@ -4,15 +4,21 @@ import DetailsThumbWrapper from "./details-thumb-wrapper";
 import DetailsWrapper from "./details-wrapper";
 import { useDispatch } from "react-redux";
 import DetailsTabNav from "./details-tab-nav";
-import RelatedProducts from "./related-products";
+// import RelatedProducts from "./related-products";
+import NewRelatedProducts from "./new-related-products";
 
 const ProductDetailsContent = ({ productItem }) => {
   const { _id, img, imageURLs, videoId,status } = productItem || {};
   const [activeImg, setActiveImg] = useState(img);
   const dispatch = useDispatch();
   // active image change when img change
+  // useEffect(() => {
+  //   setActiveImg(img);
+  // }, [img]);
+
+
   useEffect(() => {
-    setActiveImg(img);
+    if (img) setActiveImg(img);
   }, [img]);
 
   // handle image active
@@ -29,7 +35,9 @@ const ProductDetailsContent = ({ productItem }) => {
               <DetailsThumbWrapper
                 activeImg={activeImg}
                 handleImageActive={handleImageActive}
-                imageURLs={imageURLs}
+                // imageURLs={imageURLs}
+                imageURLs={imageURLs?.filter(img => img?.url)}
+
                 imgWidth={580}
                 imgHeight={670}
                 videoId={videoId}
@@ -52,7 +60,7 @@ const ProductDetailsContent = ({ productItem }) => {
       </div>
 
       {/* product details description */}
-      <div className="tp-product-details-bottom pb-140">
+      {/* <div className="tp-product-details-bottom pb-140">
         <div className="container">
           <div className="row">
             <div className="col-xl-12">
@@ -60,7 +68,7 @@ const ProductDetailsContent = ({ productItem }) => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* product details description */}
 
       {/* related products start */}
@@ -68,12 +76,16 @@ const ProductDetailsContent = ({ productItem }) => {
         <div className="container">
           <div className="row">
             <div className="tp-section-title-wrapper-6 text-center mb-40">
-              <span className="tp-section-title-pre-6">Next day Products</span>
+              {/* <span className="tp-section-title-pre-6">Next day Products</span> */}
               <h3 className="tp-section-title-6">Related Products</h3>
             </div>
           </div>
           <div className="row">
-            <RelatedProducts id={_id} />
+            {/* <RelatedProducts id={_id} /> */}
+            {/* <NewRelatedProducts id={_id} /> */}
+            <NewRelatedProducts id={productItem.id} />
+
+
           </div>
         </div>
       </section>

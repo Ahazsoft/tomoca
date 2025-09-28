@@ -1,6 +1,6 @@
 'use client';
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import PopupVideo from "../common/popup-video";
 
 const DetailsThumbWrapper = ({
@@ -13,37 +13,53 @@ const DetailsThumbWrapper = ({
   status
 }) => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
+
+  // Helper: get valid image src
+  const getImageSrc = (img) => {
+    if (!img) return null;
+    return typeof img === 'string' ? img : img?.src || null;
+  };
+
+  const validActiveImg = getImageSrc(activeImg);
+
   return (
     <>
       <div className="tp-product-details-thumb-wrapper tp-tab d-sm-flex">
         <nav>
           <div className="nav nav-tabs flex-sm-column">
-            {imageURLs?.map((item, i) => (
-              <button
-                key={i}
-                className={`nav-link ${item.img === activeImg ? "active" : ""}`}
-                onClick={() => handleImageActive(item)}
-              >
-                <Image
-                  src={item.img}
-                  alt="image"
-                  width={78}
-                  height={100}
-                  style={{ width: "100%", height: "100%" }}
-                />
-              </button>
-            ))}
+            {imageURLs
+              ?.filter(item => getImageSrc(item?.img))
+              .map((item, i) => {
+                const thumbSrc = getImageSrc(item.img);
+                return (
+                  <button
+                    key={i}
+                    className={`nav-link ${item.img === activeImg ? "active" : ""}`}
+                    onClick={() => handleImageActive(item)}
+                  >
+                    <Image
+                      src={thumbSrc}
+                      alt="thumb"
+                      width={78}
+                      height={100}
+                      style={{ width: "100%", height: "100%" }}
+                    />
+                  </button>
+                );
+              })}
           </div>
         </nav>
         <div className="tab-content m-img">
           <div className="tab-pane fade show active">
             <div className="tp-product-details-nav-main-thumb p-relative">
-              <Image
-                src={activeImg}
-                alt="product img"
-                width={imgWidth}
-                height={imgHeight}
-              />
+              {validActiveImg && (
+                <Image
+                  src={validActiveImg}
+                  alt="product img"
+                  width={imgWidth}
+                  height={imgHeight}
+                />
+              )}
               <div className="tp-product-badge">
                 {status === 'out-of-stock' && <span className="product-hot">out-stock</span>}
               </div>
@@ -61,6 +77,7 @@ const DetailsThumbWrapper = ({
           </div>
         </div>
       </div>
+
       {/* modal popup start */}
       {videoId && (
         <PopupVideo

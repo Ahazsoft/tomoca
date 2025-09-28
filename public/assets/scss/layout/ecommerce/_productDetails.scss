@@ -1459,6 +1459,7 @@
         margin-bottom: 0;
         padding-bottom: 0;
         border: 0;
+    
     }
     &-close-btn{
         position: absolute;
@@ -1488,6 +1489,7 @@
                 background-color: var(--tp-common-black);
             }
         }
+        
 
         .tp-product-details-action-sm-btn:hover{
             color:  var(--tp-theme-secondary);

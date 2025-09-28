@@ -10,12 +10,12 @@ const BlogDetailsAuthor = () => {
       className="tp-postbox-details-author d-sm-flex align-items-start"
       data-bg-color="#F4F7F9"
     >
-      <div className="tp-postbox-details-author-thumb">
+      {/* <div className="tp-postbox-details-author-thumb">
         <a href="#">
           <Image src={author_img} alt="author_img" />
         </a>
-      </div>
-      <div className="tp-postbox-details-author-content">
+      </div> */}
+      {/* <div className="tp-postbox-details-author-content">
         <span>Written by</span>
         <h5 className="tp-postbox-details-author-title">
           <a href="#">Theodore Handle</a>
@@ -33,7 +33,7 @@ const BlogDetailsAuthor = () => {
             </a>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Footer from "@/layout/footers/footer";
 import BlogDetailsArea from "@/components/blog-details/blog-details-area";
 import blogData from "@/data/blog-data";
 
-
+import HeaderFive from "@/layout/headers/header-5";
 export const metadata = {
   title: "Shofy - Blog Details Page",
 };
@@ -13,9 +13,9 @@ export const metadata = {
 export default function BlogDetailsPage() {
   return (
     <Wrapper>
-      <HeaderThree />
+      <HeaderFive />
       <BlogDetailsArea blog={blogData[4]} />
-      <Footer primary_style={true} />
+      <Footer style_3={true} />
     </Wrapper>
   );
 }

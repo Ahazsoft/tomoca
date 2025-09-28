@@ -1,18 +1,19 @@
 import Wrapper from "@/layout/wrapper";
-import HeaderTwo from "@/layout/headers/header-2";
-import ProductDetailsArea from "@/components/product-details/product-details-area";
+// import HeaderTwo from "@/layout/headers/header-2";
+import HeaderThree from "@/layout/headers/header-3";
+import NewProductDetailsArea from "@/components/product-details/new-product-details-area";
 import Footer from "@/layout/footers/footer";
 
 export const metadata = {
   title: "Shofy - Product Details Page",
 };
 
-export default function ProductDetailsPage() {
+export default function ProductDetailsPage({ params }) {
   return (
     <Wrapper>
-      <HeaderTwo style_2={true} />
-      <ProductDetailsArea id="6431364df5a812bd37e765ac" />
-      <Footer primary_style={true} />
+      <HeaderThree />
+      <NewProductDetailsArea id={params.id} />
+      <Footer style_3={true} />
     </Wrapper>
   );
 }

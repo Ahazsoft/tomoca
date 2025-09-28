@@ -15,7 +15,7 @@ const BlogSidebar = () => {
   return (
     <>
       <div className="tp-sidebar-wrapper tp-sidebar-ml--24">
-        <div className="tp-sidebar-widget mb-35">
+        {/* <div className="tp-sidebar-widget mb-35">
           <div className="tp-sidebar-search">
             <form action="#">
               <div className="tp-sidebar-search-input">
@@ -26,10 +26,10 @@ const BlogSidebar = () => {
               </div>
             </form>
           </div>
-        </div>
+        </div> */}
 
         {/* about  */}
-        <div className="tp-sidebar-widget mb-35">
+        {/* <div className="tp-sidebar-widget mb-35">
           <h3 className="tp-sidebar-widget-title">About me</h3>
           <div className="tp-sidebar-widget-content">
             <div className="tp-sidebar-about">
@@ -50,7 +50,7 @@ const BlogSidebar = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         {/* <!-- about end --> */}
 
         {/* <!-- latest post start --> */}
@@ -81,7 +81,7 @@ const BlogSidebar = () => {
         {/* <!-- latest post end --> */}
 
         {/* <!-- categories start --> */}
-        <div className="tp-sidebar-widget widget_categories mb-35">
+        {/* <div className="tp-sidebar-widget widget_categories mb-35">
           <h3 className="tp-sidebar-widget-title">Categories</h3>
           <div className="tp-sidebar-widget-content">
             <ul>
@@ -93,11 +93,11 @@ const BlogSidebar = () => {
               <li><Link href="/blog">Vegetable <span>(3)</span></Link></li>
             </ul>
           </div>
-        </div>
+        </div> */}
         {/* <!-- categories end --> */}
 
         {/* <!-- tag cloud start --> */}
-        <div className="tp-sidebar-widget mb-35">
+        {/* <div className="tp-sidebar-widget mb-35">
           <h3 className="tp-sidebar-widget-title">Popular Tags</h3>
           <div className="tp-sidebar-widget-content tagcloud">
             <a href="#">Summer</a>
@@ -107,7 +107,7 @@ const BlogSidebar = () => {
             <a href="#">Lifesttyle</a>
             <a href="#">Nature</a>
           </div>
-        </div>
+        </div> */}
         {/* <!-- tag cloud end --> */}
 
       </div>

@@ -8,6 +8,7 @@ import featured_1 from '@assets/img/events/EdgarDegas.jpg';
 import featured_2 from '@assets/img/events/CoffeeforCare.jpg';
 import featured_3 from '@assets/img/events/GizebeTomoca.jpg';
 import featured_4 from '@assets/img/events/SteamandStitch.jpg';
+import HeaderFive from "@/layout/headers/header-5";
 
 const events = [
   {
@@ -49,7 +50,7 @@ export const metadata = {
 export default function EventsPage() {
   return (
     <Wrapper>
-      <HeaderThree />
+      <HeaderFive />
 
       <section
         className="events-listing-page"

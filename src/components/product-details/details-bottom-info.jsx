@@ -24,20 +24,20 @@ const DetailsBottomInfo = ({sku,category,tag}) => {
 
       {/*  product-details-social*/}
 
-      <div className="tp-product-details-social">
+      <div className="tp-footer-social">
         <span>Share: </span>
         <a href="#">
-          <i className="fa-brands fa-facebook-f"></i>
+          <i className="fa-brands fa-instagram"></i>
         </a>
         <a href="#">
-          <i className="fa-brands fa-twitter"></i>
+          <i className="fa-brands fa-telegram"></i>
         </a>
-        <a href="#">
+        {/* <a href="#">
           <i className="fa-brands fa-linkedin-in"></i>
         </a>
         <a href="#">
           <i className="fa-brands fa-vimeo-v"></i>
-        </a>
+        </a> */}
       </div>
 
       {/* product-details-msg */}

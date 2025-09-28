@@ -44,7 +44,7 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
             {isAddedToCart ? (
               <Link
                 href="/cart"
-                className={`tp-product-action-btn-3 ${isAddedToCart?'active':''} tp-product-add-cart-btn text-center`}
+                className={`tp-product-action-btn-2 ${isAddedToCart?'active':''} tp-product-add-cart-btn text-center`}
               >
                 <Cart />
                 <span className="tp-product-tooltip">View Cart</span>
@@ -53,7 +53,7 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
               <button
                 type="button"
                 onClick={() => handleAddProduct(product)}
-                className={`tp-product-action-btn-3 ${isAddedToCart?'active':''} tp-product-add-cart-btn`}
+                className={`tp-product-action-btn-2 ${isAddedToCart?'active':''} tp-product-add-cart-btn`}
                 disabled={status === 'out-of-stock'}
               >
                 <Cart />
@@ -62,13 +62,13 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
             )}
             <button
               onClick={() => dispatch(handleProductModal(product))}
-              className="tp-product-action-btn-3 tp-product-quick-view-btn"
+              className="tp-product-action-btn-2 tp-product-quick-view-btn"
             >
               <QuickView />
               <span className="tp-product-tooltip">Quick View</span>
             </button>
 
-            <button disabled={status === 'out-of-stock'} onClick={()=> handleWishlistProduct(product)} className={`tp-product-action-btn-3 
+            <button disabled={status === 'out-of-stock'} onClick={()=> handleWishlistProduct(product)} className={`tp-product-action-btn-2
             ${isAddedToWishlist?'active':''} tp-product-add-to-wishlist-btn`}>
               <Wishlist />
               <span className="tp-product-tooltip">Add To Wishlist</span>
@@ -98,15 +98,22 @@ const ProductItem = ({ product, prdCenter = false,primary_style=false }) => {
         </div>
       </div>
       <div className="tp-product-content-3">
-        <div className="tp-product-tag-3">
+        {/* <div className="tp-product-tag-3">
           <span>{tags[1]}</span>
+        </div> */}
+        <div className="tp-product-tag-3">
+          <span>{tags && tags.length > 1 ? tags[1] : ''}</span>
         </div>
         <h3 className="tp-product-title-3">
           <Link href={`/product-details/${_id}`}>{title}</Link>
         </h3>
-        <div className="tp-product-price-wrapper-3">
+        {/* <div className="tp-product-price-wrapper-3">
           <span className="tp-product-price-3">${price.toFixed(2)}</span>
-        </div>
+        </div> */}
+        {/* <div className="tp-product-price-wrapper-3">
+          <span className="tp-product-price-3">${price !== undefined ? price.toFixed(2) : '0.00'}</span>
+        </div> */}
+
       </div>
     </div>
   );
