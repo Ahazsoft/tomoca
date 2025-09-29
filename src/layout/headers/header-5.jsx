@@ -44,7 +44,7 @@ const HeaderFive = () => {
                 </div>
 
                 {/* Menu + Icons */}
-                <div className="d-flex align-items-center" style={{ marginLeft: 'auto', marginRight: '15%' }}>
+                <div className="d-flex align-items-center" style={{ marginLeft: 'auto', marginRight: '10%' }}>
                   <div className="main-menu menu-style-3 p-relative d-flex align-items-center">
                     <nav className="tp-main-menu-content">
                       <Menus />
