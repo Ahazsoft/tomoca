@@ -130,13 +130,14 @@ const BeautyFeatured = () => {
               >
                 {item.label}
               </div>
-
-              <Image
-                src={item.img}
-                alt="featured image"
-                fill
-                style={{ objectFit: 'cover', transition: 'transform 0.3s ease' }}
-              />
+              <Link href={`/product-details/${item.id}`}>
+                <Image
+                  src={item.img}
+                  alt="featured image"
+                  fill
+                  style={{ objectFit: 'cover', transition: 'transform 0.3s ease' }}
+                />
+              </Link>
             </div>
 
             {/* Gray text box just below image, no gap */}
@@ -150,7 +151,7 @@ const BeautyFeatured = () => {
               }}
             >
               <h3 className="tp-featured-title-3 mb-10" style={{ margin: 0 }}>
-                <Link href="/shop" style={{ color: '#000', textDecoration: 'none' }}>
+                <Link href={`/product-details/${item.id}`} style={{ color: '#000', textDecoration: 'none' }}>
                   {item.title}
                 </Link>
               </h3>

@@ -2,7 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import payment_option_img from '@assets/img/product/icons/payment-option.png';
-
+import pay1 from '@assets/img/footer/pay1.png';
+import pay2 from '@assets/img/footer/pay2.png';
 const DetailsBottomInfo = ({sku,category,tag}) => {
   return (
     <>
@@ -53,8 +54,22 @@ const DetailsBottomInfo = ({sku,category,tag}) => {
         <p>
           Guaranteed safe <br /> & secure checkout
         </p>
-        <Image src={payment_option_img} alt="payment_option_img" />
+        {/* <Image src={pay1} alt="payment_option_img" />
+        <Image src={pay2} alt="payment_option_img" /> */}
+
+        <span className="d-inline-block me-2">
+          <Image src={pay1} alt="pay1" width={50} height={30} />
+
+        </span>
+        <span className="d-inline-block">
+          <Image src={pay2} alt="pay2" width={50} height={30} />
+
+        </span>
+
+        
       </div>
+
+      
     </>
   );
 };

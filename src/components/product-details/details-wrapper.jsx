@@ -129,10 +129,13 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
           <ProductQuantity />
           {/* product quantity */}
           <div className="tp-product-details-add-to-cart mb-15 w-100">
-            <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-btn w-100">Add To Cart</button>
+            {/* <button onClick={() => handleAddProduct(productItem)} disabled={status === 'out-of-stock'} className="tp-btn w-100">Add To Cart</button> */}
+            <button  disabled={status === 'out-of-stock'} className="tp-btn w-100">Add To Cart</button>
+
           </div>
         </div>
-        <Link href="/cart" onClick={() => dispatch(handleModalClose())}>
+        {/* <Link href="/cart" onClick={() => dispatch(handleModalClose())}> */}
+        <Link href="#" >
           <button className="tp-btn w-100">Buy Now</button>
         </Link>
       </div>
@@ -140,7 +143,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
       <div className="tp-product-details-action-sm" style={{ color: 'black' }}>
         <button
           disabled={status === 'out-of-stock'}
-          onClick={() => handleCompareProduct(productItem)}
+          // onClick={() => handleCompareProduct(productItem)}
           type="button"
           className="tp-product-details-action-sm-btn"
           style={{ color: 'black', WebkitTextFillColor: 'black' }}
@@ -150,7 +153,7 @@ const DetailsWrapper = ({ productItem, handleImageActive, activeImg, detailsBott
         </button>
         <button
           disabled={status === 'out-of-stock'}
-          onClick={() => handleWishlistProduct(productItem)}
+          // onClick={() => handleWishlistProduct(productItem)}
           type="button"
           className="tp-product-details-action-sm-btn"
           style={{ color: 'black', WebkitTextFillColor: 'black' }}
