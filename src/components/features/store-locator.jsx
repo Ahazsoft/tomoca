@@ -39,27 +39,27 @@ const featured_data = [
     subtitle: 'HayaHulet, Addis Ababa',
     location: 'https://maps.app.goo.gl/T8jD6ZzttU7BKQau5'
   },
-  {
-    id: 4,
-    img: location4,
-    title: <>Kuriftu</>,
-    subtitle: 'Entoto, Addis Ababa',
-    location: 'https://maps.app.goo.gl/bCGpTg8kjBCGZuZF6'
-  },
-    {
-    id: 5,
-    img: location5,
-    title: <>Bishoftu</>,
-    subtitle: 'Bishoftu , Oromia',
-    location: ''
-  },
-    {
-    id: 6,
-    img: location6,
-    title: <>Historical</>,
-    subtitle: 'Piassa, Addis Ababa',
-    location: ''
-  },
+  // {
+  //   id: 4,
+  //   img: location4,
+  //   title: <>Kuriftu</>,
+  //   subtitle: 'Entoto, Addis Ababa',
+  //   location: 'https://maps.app.goo.gl/bCGpTg8kjBCGZuZF6'
+  // },
+  //   {
+  //   id: 5,
+  //   img: location5,
+  //   title: <>Bishoftu</>,
+  //   subtitle: 'Bishoftu , Oromia',
+  //   location: ''
+  // },
+  //   {
+  //   id: 6,
+  //   img: location6,
+  //   title: <>Historical</>,
+  //   subtitle: 'Piassa, Addis Ababa',
+  //   location: ''
+  // },
 ];
 
 const StoreLocater = () => {
@@ -80,14 +80,15 @@ const StoreLocater = () => {
           {featured_data.map(item => (
             <div key={item.id} className="col-lg-4 col-md-6">
               {/* Image */}
-              <div className="tp-featured-thumb-3 relative w-full h-64 rounded-lg overflow-hidden shadow-md group">
+              <div className="tp-featured-thumb-3 relative w-full h-64 rounded-lg overflow-hidden shadow-md group cursor-pointer">
                 <Image
                   src={item.img}
                   alt="featured image"
                   fill
-                  style={{ objectFit: 'cover', transition: 'transform 0.4s' }}
-                  className="group-hover:scale-105"
+                  style={{ objectFit: 'cover', transition: 'transform 0.3s ease' }}
+                  className="group-hover:scale-110"
                 />
+                <div className="absolute inset-0 bg-black bg-opacity-30 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
               </div>
 
               {/* Content */}

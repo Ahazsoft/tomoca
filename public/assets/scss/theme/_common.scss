@@ -551,6 +551,13 @@ color: white !important;
   }
 }
 
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.10) !important;
+}
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1 !important;
+}
+
 
 // .tp-main-menu-content{
 //   z-index: 10 !important;
