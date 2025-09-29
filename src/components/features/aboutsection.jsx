@@ -28,6 +28,8 @@ const About = () => {
     textAlign: 'center',
     color: '#000',
     lineHeight: '1.7',
+    paddingLeft: '5%',
+    paddingRight: '5%',
   };
 
   return (
@@ -46,7 +48,7 @@ const About = () => {
 
       <div style={sectionStyle}>
         <div style={contentStyle}>
-          <h2 style={headingStyle}>We are more than a brand</h2>
+          <h2 style={headingStyle}>We Are More Than A Brand</h2>
           <p style={paragraphStyle}>
             We are custodians of a centuries-old tradition, carrying forward Ethiopia&apos;s timeless coffee heritage with pride and purpose. Our beans are grown in fertile highlands, handpicked by skilled farmers, and roasted with care to reveal their true Ethiopian character, each cup telling a story of the land, the people, and the ritual of coffee itself.
             <br />
@@ -73,7 +75,7 @@ const About = () => {
 
       <div style={sectionStyle}>
         <div style={contentStyle}>
-          <h2 style={headingStyle}>From our very first café,</h2>
+          <h2 style={headingStyle}>From Our Very First Café,</h2>
           <p style={paragraphStyle}>
             When we opened our doors in 1953, our vision was to modernize Ethiopia&apos;s ancient coffee traditions while preserving their timeless soul. In Ethiopia, coffee has never been just a drink, it is a ceremony of togetherness, where conversation and community thrive. Each Tomoca café was built to carry that spirit forward, blending modern roasting and brewing with the warmth of culture and hospitality.
             <br />
