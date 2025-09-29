@@ -7,7 +7,8 @@ import blog_4 from '@assets/img/blog/2/blog-1.jpg';
 import blog_5 from '@assets/img/blog/2/blog-2.jpg';
 import blog_6 from '@assets/img/blog/2/blog-3.jpg';
 // blog postbox 
-import blog_post_1 from '@assets/img/product/featured/aboutus.jpg';
+// import blog_post_1 from '@assets/img/product/featured/aboutus.jpg';
+import blog_post_1 from '@assets/img/blog/blog1.png';
 import blog_post_2 from '@assets/img/blog/blog-big-2.jpg';
 import blog_post_3 from '@assets/img/blog/blog-big-4.jpg';
 import blog_post_4 from '@assets/img/blog/blog-big-5.jpg';
