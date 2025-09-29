@@ -41,7 +41,8 @@ const Newsletter = () => {
         color: '#fff',
       }}
     >
-      Good Days Follow Great Coffee.
+      {/* Good Days Follow Great Coffee. */}
+      Heritage & Story in Every Sip.
     </h2>
 
     {/* Subscribe form */}
