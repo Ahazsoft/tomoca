@@ -35,18 +35,18 @@ const slider_data = [
     subtitle: "Winter Collection 2023",
     title: "Be your kind of beauty",
   },
-  {
-    id: 2,
-    bg: slider_bg_2,
-    subtitle: "Top Brand Collection",
-    title: "Use the best for you.",
-  },
-  {
-    id: 3,
-    bg: slider_bg_3,
-    subtitle: "Awesome Beauty Products",
-    title: "Don't Worry for Skincare",
-  },
+  // {
+  //   id: 2,
+  //   bg: slider_bg_2,
+  //   subtitle: "Top Brand Collection",
+  //   title: "Use the best for you.",
+  // },
+  // {
+  //   id: 3,
+  //   bg: slider_bg_3,
+  //   subtitle: "Awesome Beauty Products",
+  //   title: "Don't Worry for Skincare",
+  // },
 ];
 
 const AboutBanner = () => {
