@@ -9,9 +9,11 @@ import blog_6 from '@assets/img/blog/2/blog-3.jpg';
 // blog postbox 
 // import blog_post_1 from '@assets/img/product/featured/aboutus.jpg';
 import blog_post_1 from '@assets/img/blog/blog1.png';
-import blog_post_2 from '@assets/img/blog/blog-big-2.jpg';
-import blog_post_3 from '@assets/img/blog/blog-big-4.jpg';
-import blog_post_4 from '@assets/img/blog/blog-big-5.jpg';
+import blog_post_2 from '@assets/img/blog/blog2.png';
+// import blog_post_2 from '@assets/img/blog/blog-big-2.jpg';
+import blog_post_3 from '@assets/img/blog/blog3.png';
+// import blog_post_3 from '@assets/img/blog/blog-big-4.jpg';
+import blog_post_4 from '@assets/img/blog/blog4.png';
 import blog_post_5 from '@assets/img/blog/blog-big-6.jpg';
 // blog grid 
 import blog_grid_1 from '@assets/img/blog/grid/blog-grid-1.jpg';
@@ -133,48 +135,50 @@ const blogData = [
     comments:5,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Four Ways a Clean Workplace Makes Employees Happy and Healthy',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
-    video:true,
-    video_id:'457mlqV1gzA',
+    title:'The Heartbeat of Ethiopian Coffee: Discovering Tomoca’s Legacy',
+    desc:'In the bustling streets of Addis Ababa, a legend brews quietly but powerfully—Tomoca Coffee. More than just a brand, Tomoca embodies the rich heritage of Ethiopian coffee culture, offering every cup as a heartfelt tribute to tradition, passion, and quality.',
+    // video:true,
+    // video_id:'457mlqV1gzA',
     blog:'blog-postbox'
   },
   {
     id:9,
     date:'March 15, 2023',
-    author:'Shahnewaz Sakil',
+    // author:'Shahnewaz Sakil',
     comments:8,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Only one thing is impossible for God: To find any sense in any copyright law on the planet.',
+    title:'A Legacy Brewed in Ethiopia',
     desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
     blockquote:true,
     blog:'blog-postbox'
   },
   {
     id:10,
+    img:blog_post_3,
     date:'January 20, 2023',
     author:'Salim Rana',
     comments:10,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
-    audio:true,
-    audio_id:'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/316547873&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+    title:'From Bean to Brew: The Artistry Behind Tomoca’s Signature Blend',
+    desc:'Crafting the perfect cup of coffee is an art—and Tomoca masters it with every roast. From carefully selected beans to meticulous roasting techniques, Tomoca’s signature blend tells a story of dedication, flavor, and an unwavering commitment to excellence.',
+    // audio:true,
+    // audio_id:'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/316547873&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
     blog:'blog-postbox'
   },
   {
     id:11,
-    slider:true,
-    slider_images:[blog_post_3,blog_post_4,blog_post_5],
+    img:blog_post_4,
+    // slider:true,
+    // slider_images:[blog_post_3,blog_post_4,blog_post_5],
     date:'February 20, 2023',
     author:'Smith Mark',
     comments:12,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'Time for Spring Cleaning? Use These Tips From the Professionals',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'Awakening the Senses: Why Tomoca’s Coffee is a Journey, Not Just a Drink',
+    desc:'Coffee is more than a morning ritual—it’s a sensory experience. Tomoca transforms every sip into a journey through Ethiopia’s lush coffee landscapes, capturing the essence of its origin and awakening flavors that linger long after the last drop.',
     blog:'blog-postbox'
   },
   // blog grid data 

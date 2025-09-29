@@ -43,12 +43,12 @@ const BlogItem = ({ item = {} }) => {
             <Link href={`/blog-details/${item.id}`}>
               <Image src={item.img} alt="blog img" />
             </Link>
-            <a
+            {/* <a
               onClick={() => setIsVideoOpen(true)}
               className="cursor-pointer tp-postbox-video-btn popup-video"
             >
               <i className="fas fa-play"></i>
-            </a>
+            </a> */}
           </div>
         )}
         {item.audio && (
