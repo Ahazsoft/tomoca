@@ -1,7 +1,8 @@
 import Wrapper from "@/layout/wrapper";
 // import HeaderTwo from "@/layout/headers/header-2";
 import HeaderThree from "@/layout/headers/header-3";
-import NewProductDetailsArea from "@/components/product-details/new-product-details-area";
+// import NewProductDetailsArea from "@/components/product-details/new-product-details";
+import NewProductDetailsArea from "@/components/product-details/new-product-details";
 import Footer from "@/layout/footers/footer";
 
 export const metadata = {
