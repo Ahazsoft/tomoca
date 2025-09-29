@@ -39,10 +39,10 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   <h4 className="tp-footer-widget-title">Tomocca Coffee</h4>
                   <div className="tp-footer-widget-content">
                     <ul>
-                      <li><a href="#">About Us</a></li>
+                      <li><a href="/about">About Us</a></li>
                       <li><a href="#">Our Approach</a></li>
-                      <li><a href="#">Events</a></li>
-                      <li><a href="#">Blog</a></li>
+                      <li><a href="/events">Events</a></li>
+                      <li><a href="/blog">Blog</a></li>
                       {/* <li><a href="#">Game</a></li> */}
                       {/* <li><a href="#">Returns</a></li> */}
                     </ul>
