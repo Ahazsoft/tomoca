@@ -129,19 +129,21 @@ const menu_data = [
     id: 2,
     single_link: true,
     title: 'Events',
-    link: '/',
+    link: '/events',
   },
   {
     id: 3,
     single_link: true,
     title: 'Blog',
-    link: '/blog-details',
+    link: '/blog',
   },
   {
     id: 4,
     single_link: true,
     title: 'Our Approach',
-    link: '/our-approach',
+    // link: '/our-approach',
+    link: '#',
+
   },
   {
     id: 5,
@@ -174,7 +176,7 @@ export const mobile_menu = [
       {
         img: home_3,
         title: 'Beauty',
-        link: '/home-3'
+        link: '/home'
       },
       {
         img: home_4,

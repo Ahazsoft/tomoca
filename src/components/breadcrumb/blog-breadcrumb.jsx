@@ -5,7 +5,7 @@ const BlogBreadcrumb = () => {
   return (
     <section
       className="breadcrumb__area include-bg pt-150 pb-150 breadcrumb__overlay breadcrumb__style-3"
-      style={{backgroundImage:`url(${bg.src})`}}
+      // style={{backgroundImage:`url(${bg.src})`}}
     >
       <div className="container">
         <div className="row">

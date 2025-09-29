@@ -1,6 +1,7 @@
 import React from "react";
 import HeaderTwo from "@/layout/headers/header-2";
 import HeaderThree from "@/layout/headers/header-3";
+import HeaderFive from "@/layout/headers/header-5";
 import Wrapper from "@/layout/wrapper";
 import Footer from "@/layout/footers/footer";
 import BlogDetailsArea from "@/components/blog-details/blog-details-area";
@@ -10,9 +11,9 @@ const BlogDetails = ({ params }) => {
   const blogItem = blogData.find((b) => Number(b.id) === Number(params.id));
   return (
     <Wrapper>
-      <HeaderThree />
+      <HeaderFive />
       <BlogDetailsArea blog={blogItem} />
-      <Footer primary_style={true} />
+      <Footer style_3={true} />
     </Wrapper>
   );
 };

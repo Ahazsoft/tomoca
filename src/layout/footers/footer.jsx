@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 // internal
 import logo from '@assets/img/logo/logo.svg';
-import pay1 from '@assets/img/footer/footer-pay-5.png';
-import pay2 from '@assets/img/footer/footer-pay-5.png';
+import pay1 from '@assets/img/footer/pay1.png';
+import pay2 from '@assets/img/footer/pay2.png';
 import social_data from '@/data/social-data';
 import { Email, Location, Phone } from '@/svg';
 
@@ -122,12 +122,20 @@ const Footer = ({ style_2 = false, style_3 = false,primary_style=false }) => {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="tp-footer-payment text-md-end">
-                    <p>
-                      <Image src={pay1} alt="pay" />
-                    </p>
-                  </div>
+                <div className="tp-footer-payment text-md-end">
+                  <p className="mb-0">
+                    <span className="d-inline-block me-2">
+                      <Image src={pay1} alt="pay1" width={50} height={30} />
+
+                    </span>
+                    <span className="d-inline-block">
+                      <Image src={pay2} alt="pay2" width={50} height={30} />
+
+                    </span>
+                  </p>
                 </div>
+              </div>
+
               </div>
             </div>
           </div>

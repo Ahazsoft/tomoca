@@ -198,12 +198,12 @@
 }
 .store-section{
 	background-color: #EED6C7 !important;
-	height: 110vh !important; 
-  	overflow: hidden !important;
+	height: 80vh !important; 
+  overflow: hidden !important;
 }
 
 .events-section{
-	height: 100vh !important; 
+	height: 50vh !important; 
   overflow: hidden !important;
 }
 
@@ -471,6 +471,57 @@ color: white !important;
   -webkit-text-fill-color: black !important;
 }
 
+.tp-postbox-title{
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+}
+.tp-postbox-meta{
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+}
+.tp-pagination ul li span.current {
+  background: #D75C20 !important;
+  border-color: #C66335 !important;
+  color: #fff !important;
+}
+.tp-pagination ul li span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid  #C66335 !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #C66335 !important;
+  cursor: pointer;
+  &:hover {
+    // background-color: darken(#C66335, 10%);
+    background-color: #D75C20 !important;
+    color: #fff !important;
+  }
+}
+.tp-pagination ul li button{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid  #C66335 !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #C66335 !important;
+  cursor: pointer;
+  &:hover {
+    // background-color: darken(#C66335, 10%);
+    background-color: #D75C20 !important;
+    color: #fff !important;
+  }
+}
+
+.tp-main-menu-content{
+  z-index: 10 !important;
+}
 
 // demo for method
 .demo{

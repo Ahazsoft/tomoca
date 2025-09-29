@@ -7,7 +7,7 @@ import blog_4 from '@assets/img/blog/2/blog-1.jpg';
 import blog_5 from '@assets/img/blog/2/blog-2.jpg';
 import blog_6 from '@assets/img/blog/2/blog-3.jpg';
 // blog postbox 
-import blog_post_1 from '@assets/img/blog/blog-big-3.jpg';
+import blog_post_1 from '@assets/img/product/featured/aboutus.jpg';
 import blog_post_2 from '@assets/img/blog/blog-big-2.jpg';
 import blog_post_3 from '@assets/img/blog/blog-big-4.jpg';
 import blog_post_4 from '@assets/img/blog/blog-big-5.jpg';
@@ -120,8 +120,8 @@ const blogData = [
     comments:2,
     tags: ["Fashion", "Lift Style","News"],
     category:'Beauty',
-    title:'How to Clean Your Home Faster and More Efficiently',
-    desc:'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat',
+    title:'In the Depths of the Roast: Celebrating Tomoca’s Bar Type Dark Roast',
+    desc:'There’s a certain magic in darkness. Quiet, confident, and unapologetically bold, darkness draws you in, and nowhere is that more true than in a cup of Tomoca’s Bar Type dark roast',
     blog:'blog-postbox'
   },
   {

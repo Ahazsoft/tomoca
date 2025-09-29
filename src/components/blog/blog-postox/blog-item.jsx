@@ -82,11 +82,11 @@ const BlogItem = ({ item = {} }) => {
               <span>
                 <i className="far fa-calendar-check"></i> {item.date}
               </span>
-              <span>
+              {/* <span>
                 <a href="#">
                   <i className="far fa-user"></i> {item.author}
                 </a>
-              </span>
+              </span> */}
               <span>
                 <a href="#">
                   <i className="fal fa-comments"></i> {item.comments} Comments

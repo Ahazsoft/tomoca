@@ -36,7 +36,7 @@ const HeaderThree = () => {
               {/* Centered Logo */}
               <div className="position-absolute start-50 translate-middle-x z-index-1">
                 <div className="logo text-center">
-                  <Link href="/home-3">
+                  <Link href="/home">
                     <Image className="logo-light" src={logo_white} alt="logo" />
                     <Image className="logo-dark" src={logo_dark} alt="logo" />
                   </Link>
