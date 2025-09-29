@@ -37,10 +37,10 @@ import list_img_8 from '@assets/img/blog/grid/blog-grid-3.jpg';
 const blogData = [
   {
     id: 1,
-    img: blog_1,
+    img: blog_post_1,
     date: "14 January, 2023",
     author:'Mark Smith',
-    title: "The Modern Art Clay Ceramics.",
+    title: "In the Depths of the Roast: Celebrating Tomoca’s Bar Type Dark Roast",
     tags: ["Tablet", "News"],
     category:'electronics',
     comments:2,
@@ -50,10 +50,10 @@ const blogData = [
   },
   {
     id: 2,
-    img: blog_2,
+    img: blog_post_3,
     date: "18 February, 2023",
     author:'Naim Ahmed',
-    title: "How clothes are linked to climate",
+    title: "From Bean to Brew: The Artistry Behind Tomoca’s Signature Blend",
     tags: ["Monitor", "Technology"],
     category:'electronics',
     comments:4,
@@ -63,10 +63,10 @@ const blogData = [
   },
   {
     id: 3,
-    img: blog_3,
+    img: blog_post_4,
     date: "20 January, 2023",
     author:'Salim Rana',
-    title: "The Sound Of Fashion: Malcolm",
+    title: "Awakening the Senses: Why Tomoca’s Coffee is a Journey, Not Just a Drink",
     tags: ["Microphone", "Computer"],
     category:'electronics',
     comments:5,
