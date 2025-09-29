@@ -6,11 +6,11 @@ const PostboxDetailsTop = ({blog}) => {
   const {category,title,date,comments,author} = blog || {};
   return ( 
     <div className="tp-postbox-details-top">
-      <div className="tp-postbox-details-category">
+      {/* <div className="tp-postbox-details-category">
         <span>
           <a href="#" className="text-capitalize">{category}</a>
         </span>
-      </div>
+      </div> */}
       <h3 className="tp-postbox-details-title">
         {title}
       </h3>

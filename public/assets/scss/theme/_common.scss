@@ -479,6 +479,17 @@ color: white !important;
   color: black !important;
   -webkit-text-fill-color: black !important;
 }
+
+.tp-postbox-details-meta,
+.tp-postbox-details-meta span{
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+}
+
+.tp-postbox-details-category{
+  color: black !important;
+  -webkit-text-fill-color: black !important;
+}
 .tp-pagination ul li span.current {
   background: #D75C20 !important;
   border-color: #C66335 !important;
@@ -518,6 +529,23 @@ color: white !important;
     color: #fff !important;
   }
 }
+
+.tp-postbox-details-comment-reply a{
+  display: inline-block;
+  line-height: 38px;
+  text-align: center;
+  border: 1px solid  #C66335 !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #C66335 !important;
+  cursor: pointer;
+  &:hover {
+    // background-color: darken(#C66335, 10%);
+    background-color: #D75C20 !important;
+    color: #fff !important;
+  }
+}
+
 
 .tp-main-menu-content{
   z-index: 10 !important;
