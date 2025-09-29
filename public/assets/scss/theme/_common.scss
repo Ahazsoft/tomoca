@@ -30,6 +30,11 @@
 	z-index: 11;
 }
 
+.z-index-20 {
+  z-index: 20;
+}
+
+
 .overflow-y-visible{
 	overflow-x: hidden;
 	overflow-y: visible;
@@ -547,9 +552,9 @@ color: white !important;
 }
 
 
-.tp-main-menu-content{
-  z-index: 10 !important;
-}
+// .tp-main-menu-content{
+//   z-index: 10 !important;
+// }
 
 // demo for method
 .demo{
