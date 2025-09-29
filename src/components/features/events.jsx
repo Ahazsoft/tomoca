@@ -95,7 +95,7 @@ const Events = () => {
         padding: '60px 0',
         backgroundColor,
         transition: 'background-color 0.5s ease-in-out',
-        minHeight: '50vh',
+        minHeight: '70vh',
         display: 'flex',
         alignItems: 'center',
       }}
